@@ -1,0 +1,22 @@
+.teams {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  color: black;
+  margin-top: 50px;
+}
+
+.totalAverage {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  color: black;
+  margin-top: 50px;
+}
+.totalAverageFormation {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  color: black;
+  margin-top: 50px;
+}

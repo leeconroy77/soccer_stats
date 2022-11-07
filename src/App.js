@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import {home} from './directory/DirectoryHome';
-import {away} from './directory/DirectoryAway';
+import {all} from './directory/DirectoryAll';
 
 import styles from './app.module.css'
 
@@ -21,8 +20,8 @@ const [totalAvgAwayGoals, setTotalAvgAwayGoals ] = useState(0);
 const [totalAvgAwayGoalsFormation, setTotalAvgAwayGoalsFormation ] = useState(0);
 const [exactFormationTotalGoalsHome, setExactFormationTotalGoalsHome ] = useState(0);
 const [exactFormationTotalGoalsAway, setExactFormationTotalGoalsAway ] = useState(0);
-const [totalFormationCornersHome, setTotalFormationCornersHome ] = useState(0);
-const [totalFormationCornersAway, setTotalFormationCornersAway ] = useState(0);
+const [totalFormationBttsHome, setTotalFormationBttsHome ] = useState(0);
+const [totalFormationBttsAway, setTotalFormationBttsAway ] = useState(0);
 const [totalFormationFistHalfGoalsHome, setTotalFormationFistHalfGoalsHome ] = useState(0);
 const [totalFormationFistHalfGoalsAway, setTotalFormationFistHalfGoalsAway ] = useState(0);
 const [totalFormationSecondHalfGoalsHome, setTotalFormationSecondHalfGoalsHome ] = useState(0);
@@ -46,6 +45,8 @@ const handleChangeAwayFormation = (e) => {
 
 const handleSubmit = (e) => { 
   e.preventDefault();
+  setUpDatedHome(valueHome)  
+  setUpDatedAway(valueAway)
 
   const handleClickHome = (e) => {
     
@@ -55,9 +56,9 @@ const handleSubmit = (e) => {
       let avgHomeGoals = []
       
       
-      home.map(match =>  {
+      all.map(match =>  {
       
-      if (upDatedHome === match.team) {
+      if (upDatedHome === match.team && match.ground === "home") {
       avgHomeGoals.push(match.total_goals)
     
     const totalAvgHomeGoals = avgHomeGoals.reduce((a, b) => a + b) / avgHomeGoals.length
@@ -78,9 +79,9 @@ const handleSubmit = (e) => {
       let avgHomeGoalsFormation = []
       
       
-      home.map(match =>  {
+      all.map(match =>  {
       
-      if (homeFormation === match.formation) {
+      if (homeFormation === match.formation && match.ground === "home") {
         avgHomeGoalsFormation.push(match.total_goals)
        
         
@@ -104,9 +105,9 @@ const handleSubmit = (e) => {
       let avgAwayGoals = []
       
       
-      away.map(match =>  {
+      all.map(match =>  {
       
-      if (upDatedAway === match.team) {
+      if (upDatedAway === match.team && match.ground === "away") {
       avgAwayGoals.push(match.total_goals)
      
     const totalAvgAwayGoals = avgAwayGoals.reduce((a, b) => a + b) / avgAwayGoals.length
@@ -129,9 +130,9 @@ const handleSubmit = (e) => {
     let avgHomeGoalsFormationExact = []
       
       
-    home.map(match =>  {
+    all.map(match =>  {
     
-    if (homeFormation === match.formation && awayFormation === match.opp_formation) {
+    if (homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home") {
       avgHomeGoalsFormationExact.push(match.total_goals)
      
       
@@ -149,9 +150,9 @@ const handleSubmit = (e) => {
     let avgAwayGoalsFormationExact = []
       
       
-    away.map(match =>  {
+    all.map(match =>  {
     
-    if (awayFormation === match.formation && homeFormation === match.opp_formation) {
+    if (awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away") {
       avgAwayGoalsFormationExact.push(match.total_goals)
      
       
@@ -173,9 +174,9 @@ const handleSubmit = (e) => {
       let avgAwayGoalsFormation = []
       
       
-      away.map(match =>  {
+      all.map(match =>  {
       
-      if (awayFormation === match.formation) {
+      if (awayFormation === match.formation && match.ground === "away") {
       avgAwayGoalsFormation.push(match.total_goals)
      console.log(avgAwayGoalsFormation);
     const totalAvgAwayGoalsFormation = avgAwayGoalsFormation.reduce((a, b) => a + b) / avgAwayGoalsFormation.length
@@ -196,63 +197,63 @@ const handleSubmit = (e) => {
 
 
 
-  const handleClickHomeCorners = (e) => {
+  const handleClickHomeBtts = (e) => {
   
     setUpDatedHomeFormation(homeFormation)
   
-    const exactHomeFormationTotalcorners = () => {
-      let avgHomecorners = []
+    const exactHomeFormationTotalBtts = () => {
+      let avgHomeBtts = []
       
       
-      home.map(match =>  {
+      all.map(match =>  {
     
-        if (homeFormation === match.formation && awayFormation === match.opp_formation) {
-          avgHomecorners.push(match.corners)
+        if (homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home") {
+          avgHomeBtts.push(match.btts)
          
           
        
-      const totalFormationCornersHome = avgHomecorners.reduce((a, b) => a + b) / avgHomecorners.length
+      const totalFormationBttsHome = avgHomeBtts.reduce((a, b) => a + b) / avgHomeBtts.length
         
-       console.log(totalFormationCornersHome);
-       setTotalFormationCornersHome(totalFormationCornersHome)
+       console.log(totalFormationBttsHome);
+       setTotalFormationBttsHome(totalFormationBttsHome)
     }})
       }
-      exactHomeFormationTotalcorners()
+      exactHomeFormationTotalBtts()
     
   
     
   }
-  handleClickHomeCorners()
+  handleClickHomeBtts()
 
 
 
-  const handleClickAwayCorners = (e) => {
+  const handleClickAwayBtts = (e) => {
   
     setUpDatedAwayFormation(awayFormation)
   
-    const exactAwayFormationTotalcorners = () => {
-      let avgAwayCorners = []
+    const exactAwayFormationTotalBtts = () => {
+      let avgAwayBtts = []
       
       
-      away.map(match =>  {
+      all.map(match =>  {
     
-        if (awayFormation === match.formation && homeFormation === match.opp_formation) {
-          avgAwayCorners.push(match.corners)
+        if (awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away") {
+          avgAwayBtts.push(match.btts)
          
           
        
-      const totalFormationCornersAway = avgAwayCorners.reduce((a, b) => a + b) / avgAwayCorners.length
+      const totalFormationBttsAway = avgAwayBtts.reduce((a, b) => a + b) / avgAwayBtts.length
         
-       console.log(totalFormationCornersAway);
-       setTotalFormationCornersAway(totalFormationCornersAway)
+       console.log(totalFormationBttsAway);
+       setTotalFormationBttsAway(totalFormationBttsAway)
     }})
       }
-      exactAwayFormationTotalcorners()
+      exactAwayFormationTotalBtts()
     
   
     
   }
-  handleClickAwayCorners()
+  handleClickAwayBtts()
   
  
 
@@ -274,9 +275,9 @@ const handleSubmit = (e) => {
       let avgfirstHalfGoal = []
       
       
-      home.map(match =>  {
+      all.map(match =>  {
     
-        if (homeFormation === match.formation && awayFormation === match.opp_formation) {
+        if (homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home") {
           avgfirstHalfGoal.push(match.first_half_goals)
          
           
@@ -299,14 +300,15 @@ const handleSubmit = (e) => {
   const handleClickfirstHalfGoalsAway = (e) => {
   
     setUpDatedAwayFormation(awayFormation)
+    setUpDatedHomeFormation(homeFormation)
   
     const exactAwayFistHalfGoals = () => {
       let avgAwayFistHalfGoals  = []
       
       
-      away.map(match =>  {
+      all.map(match =>  {
     
-        if (awayFormation === match.formation && homeFormation === match.opp_formation) {
+        if (awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away") {
           avgAwayFistHalfGoals.push(match.first_half_goals)
          
           
@@ -344,9 +346,9 @@ const handleSubmit = (e) => {
       let avgSecondHalfGoal = []
       
       
-      home.map(match =>  {
+      all.map(match =>  {
     
-        if (homeFormation === match.formation && awayFormation === match.opp_formation) {
+        if (homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home") {
           avgSecondHalfGoal.push(match.second_half_goals)
          
           
@@ -374,9 +376,9 @@ const handleSubmit = (e) => {
       let avgAwaySecondHalfGoals  = []
       
       
-      away.map(match =>  {
+      all.map(match =>  {
     
-        if (awayFormation === match.formation && homeFormation === match.opp_formation) {
+        if (awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away") {
           avgAwaySecondHalfGoals.push(match.second_half_goals)
          
           
@@ -425,7 +427,7 @@ const handleSubmit = (e) => {
       {exactFormationTotalGoalsHome} Total Average exact formation goals {exactFormationTotalGoalsAway}
       </div>
       <div className={styles.totalAverageFormation} >
-      {totalFormationCornersHome} Total Average Corners {totalFormationCornersAway}
+      {totalFormationBttsHome} Total Average btts {totalFormationBttsAway}
       </div>
       <div className={styles.totalAverageFormation} >
       {totalFormationFistHalfGoalsHome} Total Average 1st Half Goals {totalFormationFistHalfGoalsAway}

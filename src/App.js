@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {all} from './directory/DirectoryAll';
+import {EnglishPremier} from './directory/Directory.englishPremier'
 
 import styles from './app.module.css'
 
@@ -10,14 +10,18 @@ const [valueHome, setvalueHome ] = useState("");
 const [valueAway, setvalueAway ] = useState("");
 const [homeFormation, setHomeFormation ] = useState("");
 const [awayFormation, setAwayFormation ] = useState("");
-const [upDatedHome, setUpDatedHome ] = useState(valueHome);
+const [upDatedHome, setUpDatedHome ] = useState("");
 const [upDatedHomeFormation, setUpDatedHomeFormation ] = useState(homeFormation);
-const [upDatedAway, setUpDatedAway ] = useState(valueAway);
+const [upDatedAway, setUpDatedAway ] = useState("");
 const [upDatedAwayFormation, setUpDatedAwayFormation ] = useState(awayFormation);
 const [totalAvgHomeGoals, setTotalAvgHomeGoals ] = useState(0);
 const [totalAvgHomeGoalsFormation, setTotalAvgHomeGoalsFormation ] = useState(0);
+const [totalAvgHomeGoalsFormationScored, setTotalAvgHomeGoalsFormationScored ] = useState(0);
+const [totalAvgHomeGoalsFormationConceded, setTotalAvgHomeGoalsFormationConceded ] = useState(0);
 const [totalAvgAwayGoals, setTotalAvgAwayGoals ] = useState(0);
 const [totalAvgAwayGoalsFormation, setTotalAvgAwayGoalsFormation ] = useState(0);
+const [totalAvgAwayGoalsFormationScored, setTotalAvgAwayGoalsFormationScored ] = useState(0);
+const [totalAvgAwayGoalsFormationConceded, setTotalAvgAwayGoalsFormationConceded ] = useState(0);
 const [exactFormationTotalGoalsHome, setExactFormationTotalGoalsHome ] = useState(0);
 const [exactFormationTotalGoalsAway, setExactFormationTotalGoalsAway ] = useState(0);
 const [totalFormationBttsHome, setTotalFormationBttsHome ] = useState(0);
@@ -26,6 +30,11 @@ const [totalFormationFistHalfGoalsHome, setTotalFormationFistHalfGoalsHome ] = u
 const [totalFormationFistHalfGoalsAway, setTotalFormationFistHalfGoalsAway ] = useState(0);
 const [totalFormationSecondHalfGoalsHome, setTotalFormationSecondHalfGoalsHome ] = useState(0);
 const [totalFormationSecondHalfGoalsAway, setTotalFormationSecondHalfGoalsAway ] = useState(0);
+const [aveGoalScoredAgainstOppFormationHome, setAveGoalScoredAgainstOppFormationHome ] = useState(0);
+const [aveGoalConcedeAgainstOppFormationHome, setAveGoalConcedeAgainstOppFormationHome ] = useState(0);
+const [aveGoalScoredAgainstOppFormationAway, setAveGoalScoredAgainstOppFormationAway, ] = useState(0);
+const [aveGoalConcedeAgainstOppFormationAway, setAveGoalConcedeAgainstOppFormationAway,] = useState(0);
+
 
 
 
@@ -56,7 +65,7 @@ const handleSubmit = (e) => {
       let avgHomeGoals = []
       
       
-      all.map(match =>  {
+      EnglishPremier.map(match =>  {
       
       if (upDatedHome === match.team && match.ground === "home") {
       avgHomeGoals.push(match.total_goals)
@@ -74,19 +83,21 @@ const handleSubmit = (e) => {
   const handleClickHomeformation = (e) => {
     
     setUpDatedHomeFormation(homeFormation)   
+    setUpDatedHome(valueHome)  
   
-    const avgHomeTotalGoalsFormation = () => {
+    const avgHomeTotalGoalsFormation = (totalAvgHomeGoalsFormation) => {
       let avgHomeGoalsFormation = []
+      setUpDatedHomeFormation(homeFormation)  
+      setUpDatedHome(valueHome) 
       
+      EnglishPremier.map(match =>  {
       
-      all.map(match =>  {
-      
-      if (homeFormation === match.formation && match.ground === "home") {
+      if (homeFormation === match.formation && match.ground === "home" && valueHome === match.team) {
         avgHomeGoalsFormation.push(match.total_goals)
        
-        
+        console.log(avgHomeGoalsFormation);
      
-    const totalAvgHomeGoalsFormation = avgHomeGoalsFormation.reduce((a, b) => a + b) / avgHomeGoalsFormation.length
+    totalAvgHomeGoalsFormation = avgHomeGoalsFormation.reduce((a, b) => a + b) / avgHomeGoalsFormation.length
       
      console.log(totalAvgHomeGoalsFormation);
      setTotalAvgHomeGoalsFormation(totalAvgHomeGoalsFormation)
@@ -96,6 +107,151 @@ const handleSubmit = (e) => {
   }
   
   handleClickHomeformation()
+
+
+
+
+
+  const handleClickHomeformationScored = (e) => {
+    
+    setUpDatedHomeFormation(homeFormation)   
+    setUpDatedHome(valueHome)  
+  
+    const avgHomeTotalGoalsScoredFormation = (totalAvgHomeGoalsFormationScored) => {
+      let avgHomeGoalsScoredFormation = []
+      setUpDatedHomeFormation(homeFormation)  
+      setUpDatedHome(valueHome) 
+      
+      EnglishPremier.map(match =>  {
+      
+      if (homeFormation === match.formation && match.ground === "home" && valueHome === match.team) {
+        avgHomeGoalsScoredFormation.push(match.home_goals)
+       
+        console.log(avgHomeGoalsScoredFormation);
+     
+        totalAvgHomeGoalsFormationScored = avgHomeGoalsScoredFormation.reduce((a, b) => a + b) / avgHomeGoalsScoredFormation.length
+      
+     console.log(totalAvgHomeGoalsFormationScored);
+     setTotalAvgHomeGoalsFormationScored(totalAvgHomeGoalsFormationScored)
+  }})
+    }
+    avgHomeTotalGoalsScoredFormation()
+  }
+  
+  handleClickHomeformationScored()
+
+
+
+
+
+  const handleClickHomeformationConceded = (e) => {
+    
+    setUpDatedHomeFormation(homeFormation)   
+    setUpDatedHome(valueHome)  
+  
+    const avgHomeTotalGoalsConcededFormation = (totalAvgHomeGoalsFormationConceded) => {
+      let avgHomeGoalsConcededFormation = []
+      setUpDatedHomeFormation(homeFormation)  
+      setUpDatedHome(valueHome) 
+      
+      EnglishPremier.map(match =>  {
+      
+      if (homeFormation === match.formation && match.ground === "home" && valueHome === match.team) {
+        avgHomeGoalsConcededFormation.push(match.away_goals)
+       
+        console.log(avgHomeGoalsConcededFormation);
+     
+        totalAvgHomeGoalsFormationConceded = avgHomeGoalsConcededFormation.reduce((a, b) => a + b) / avgHomeGoalsConcededFormation.length
+      
+     console.log(totalAvgHomeGoalsFormationConceded);
+     setTotalAvgHomeGoalsFormationConceded(totalAvgHomeGoalsFormationConceded)
+  }})
+    }
+    avgHomeTotalGoalsConcededFormation()
+  }
+  
+  handleClickHomeformationConceded()
+
+
+
+
+
+
+
+
+  const handleClickAwayformationScored = (e) => {
+    
+    setUpDatedHomeFormation(awayFormation)   
+    setUpDatedHome(valueAway)  
+  
+    const avgAwayTotalGoalsScoredFormation = (totalAvgAwayGoalsFormationScored) => {
+      let avgAwayGoalsScoredFormation = []
+      setUpDatedAwayFormation(awayFormation)  
+      setUpDatedAway(valueAway) 
+      
+      EnglishPremier.map(match =>  {
+      
+      if (awayFormation === match.formation && match.ground === "away" && valueAway === match.team) {
+        avgAwayGoalsScoredFormation.push(match.away_goals)
+       
+        console.log(avgAwayGoalsScoredFormation);
+     
+        totalAvgAwayGoalsFormationScored = avgAwayGoalsScoredFormation.reduce((a, b) => a + b) / avgAwayGoalsScoredFormation.length
+      
+     console.log(totalAvgAwayGoalsFormationScored);
+     setTotalAvgAwayGoalsFormationScored(totalAvgAwayGoalsFormationScored)
+  }})
+    }
+    avgAwayTotalGoalsScoredFormation()
+  }
+  
+  handleClickAwayformationScored()
+
+
+
+
+
+  const handleClickAwayformationConceded = (e) => {
+    
+    setUpDatedAwayFormation(awayFormation)   
+    setUpDatedAway(valueAway)  
+  
+    const avgAwayTotalGoalsConcededFormation = (totalAvgAwayGoalsFormationConceded) => {
+      let avgAwayGoalsConcededFormation = []
+      setUpDatedAwayFormation(awayFormation)   
+    setUpDatedAway(valueAway)  
+      
+    EnglishPremier.map(match =>  {
+      
+      if (awayFormation === match.formation && match.ground === "away" && valueAway === match.team) {
+        avgAwayGoalsConcededFormation.push(match.home_goals)
+       
+        console.log(avgAwayGoalsConcededFormation);
+     
+        totalAvgAwayGoalsFormationConceded = avgAwayGoalsConcededFormation.reduce((a, b) => a + b) / avgAwayGoalsConcededFormation.length
+      
+     console.log(totalAvgAwayGoalsFormationConceded);
+     setTotalAvgAwayGoalsFormationConceded(totalAvgAwayGoalsFormationConceded)
+  }})
+    }
+    avgAwayTotalGoalsConcededFormation()
+  }
+  
+  handleClickAwayformationConceded()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   const handleClickAway = (e) => {
     
@@ -105,7 +261,7 @@ const handleSubmit = (e) => {
       let avgAwayGoals = []
       
       
-      all.map(match =>  {
+      EnglishPremier.map(match =>  {
       
       if (upDatedAway === match.team && match.ground === "away") {
       avgAwayGoals.push(match.total_goals)
@@ -126,15 +282,22 @@ const handleSubmit = (e) => {
   }
   handleClickAway()
 
+  const handleClickExactHomeFormation = () => {
+
+    setUpDatedHome(valueHome) 
+    setUpDatedHomeFormation(homeFormation)  
+
   const exactHomeFormationTotalAvgGoals = () => {
     let avgHomeGoalsFormationExact = []
+    setUpDatedHome(valueHome) 
+    setUpDatedHomeFormation(homeFormation)  
       
-      
-    all.map(match =>  {
+    EnglishPremier.map(match =>  {
     
-    if (homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home") {
+    if (valueHome === match.team && homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home" ) {
       avgHomeGoalsFormationExact.push(match.total_goals)
      
+      console.log(avgHomeGoalsFormationExact);
       
    
   const exactFormationTotalGoalsHome = avgHomeGoalsFormationExact.reduce((a, b) => a + b) / avgHomeGoalsFormationExact.length
@@ -144,15 +307,17 @@ const handleSubmit = (e) => {
 }})
   }
   exactHomeFormationTotalAvgGoals()
+  }
+  handleClickExactHomeFormation()
 
 
   const exactAwayFormationTotalAvgGoals = () => {
     let avgAwayGoalsFormationExact = []
       
       
-    all.map(match =>  {
+    EnglishPremier.map(match =>  {
     
-    if (awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away") {
+    if (valueAway === match.team && awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away" ) {
       avgAwayGoalsFormationExact.push(match.total_goals)
      
       
@@ -169,23 +334,28 @@ const handleSubmit = (e) => {
   const handleClickAwayFormation = (e) => {
   
     setUpDatedAwayFormation(awayFormation)
+    setUpDatedAway(valueAway)
   
     const avgAwayTotalGoalsFormation = () => {
       let avgAwayGoalsFormation = []
+      console.log(awayFormation);
       
       
-      all.map(match =>  {
+      EnglishPremier.map(match =>  {
       
-      if (awayFormation === match.formation && match.ground === "away") {
+      if (awayFormation === match.formation && match.ground === "away" && valueAway === match.team) {
       avgAwayGoalsFormation.push(match.total_goals)
      console.log(avgAwayGoalsFormation);
     const totalAvgAwayGoalsFormation = avgAwayGoalsFormation.reduce((a, b) => a + b) / avgAwayGoalsFormation.length
       
-     console.log(totalAvgAwayGoalsFormation);
+    console.log(totalAvgAwayGoalsFormation);
     return setTotalAvgAwayGoalsFormation(totalAvgAwayGoalsFormation)
-     
       
-  }})
+  }
+  
+    
+
+})
     
   
     }
@@ -205,7 +375,7 @@ const handleSubmit = (e) => {
       let avgHomeBtts = []
       
       
-      all.map(match =>  {
+      EnglishPremier.map(match =>  {
     
         if (homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home") {
           avgHomeBtts.push(match.btts)
@@ -235,7 +405,7 @@ const handleSubmit = (e) => {
       let avgAwayBtts = []
       
       
-      all.map(match =>  {
+      EnglishPremier.map(match =>  {
     
         if (awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away") {
           avgAwayBtts.push(match.btts)
@@ -275,7 +445,7 @@ const handleSubmit = (e) => {
       let avgfirstHalfGoal = []
       
       
-      all.map(match =>  {
+      EnglishPremier.map(match =>  {
     
         if (homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home") {
           avgfirstHalfGoal.push(match.first_half_goals)
@@ -306,7 +476,7 @@ const handleSubmit = (e) => {
       let avgAwayFistHalfGoals  = []
       
       
-      all.map(match =>  {
+      EnglishPremier.map(match =>  {
     
         if (awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away") {
           avgAwayFistHalfGoals.push(match.first_half_goals)
@@ -346,7 +516,7 @@ const handleSubmit = (e) => {
       let avgSecondHalfGoal = []
       
       
-      all.map(match =>  {
+      EnglishPremier.map(match =>  {
     
         if (homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home") {
           avgSecondHalfGoal.push(match.second_half_goals)
@@ -376,7 +546,7 @@ const handleSubmit = (e) => {
       let avgAwaySecondHalfGoals  = []
       
       
-      all.map(match =>  {
+      EnglishPremier.map(match =>  {
     
         if (awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away") {
           avgAwaySecondHalfGoals.push(match.second_half_goals)
@@ -397,6 +567,132 @@ const handleSubmit = (e) => {
   handleClickSecondHalfGoalsAway()
 
 
+  const handleClickAveOppFormationHome = (e) => {
+  
+    setUpDatedHomeFormation(homeFormation)
+  
+    const avgGoalOppFormationHome = () => {
+      let avgGoalOppFormation = []
+      
+      
+      EnglishPremier.map(match =>  {
+    
+        if (valueHome === match.team && awayFormation === match.opp_formation && match.ground === "home") {
+          avgGoalOppFormation.push(match.home_goals)
+         
+          
+       
+      const aveGoalScoredAgainstOppFormationHome = avgGoalOppFormation.reduce((a, b) => a + b) / avgGoalOppFormation.length
+        
+       console.log(aveGoalScoredAgainstOppFormationHome);
+       setAveGoalScoredAgainstOppFormationHome(aveGoalScoredAgainstOppFormationHome)
+    }})
+      }
+      avgGoalOppFormationHome()
+    
+  
+    
+  }
+  handleClickAveOppFormationHome()
+
+  const handleClickAveConcededOppFormationHome = (e) => {
+  
+    setUpDatedHomeFormation(homeFormation)
+  
+    const avgconcededOppFormationHome = () => {
+      let avgconcededOppFormation = []
+      
+      
+      EnglishPremier.map(match =>  {
+    
+        if (valueHome === match.team && awayFormation === match.opp_formation && match.ground === "home") {
+          avgconcededOppFormation.push(match.away_goals)
+         
+          
+       
+      const aveGoalConcedeAgainstOppFormationHome = avgconcededOppFormation.reduce((a, b) => a + b) / avgconcededOppFormation.length
+        
+       console.log(aveGoalConcedeAgainstOppFormationHome);
+       setAveGoalConcedeAgainstOppFormationHome(aveGoalConcedeAgainstOppFormationHome)
+    }})
+      }
+      avgconcededOppFormationHome()
+    
+  
+    
+  }
+  handleClickAveConcededOppFormationHome()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  const handleClickAveOppFormationAway = (e) => {
+  
+    setUpDatedHomeFormation(awayFormation)
+  
+    const avgGoalOppFormationAway = () => {
+      let avgGoalOppFormation = []
+      
+      
+      EnglishPremier.map(match =>  {
+    
+        if (valueAway === match.team && homeFormation === match.opp_formation && match.ground === "away") {
+          avgGoalOppFormation.push(match.away_goals)
+         
+          
+       
+      const aveGoalScoredAgainstOppFormationAway= avgGoalOppFormation.reduce((a, b) => a + b) / avgGoalOppFormation.length
+        
+       console.log(aveGoalScoredAgainstOppFormationAway);
+       setAveGoalScoredAgainstOppFormationAway(aveGoalScoredAgainstOppFormationAway)
+    }})
+      }
+      avgGoalOppFormationAway()
+    
+  
+    
+  }
+  handleClickAveOppFormationAway()
+
+  const handleClickAveConcededOppFormationAway = (e) => {
+    setUpDatedHomeFormation(homeFormation)
+    setUpDatedHomeFormation(awayFormation)
+  
+    const avgconcededOppFormationAway = () => {
+      let avgconcededOppFormation = []
+      
+      
+      EnglishPremier.map(match =>  {
+    
+        if (valueAway=== match.team && homeFormation === match.opp_formation && match.ground === "away") {
+          avgconcededOppFormation.push(match.home_goals)
+         
+          
+       
+      const aveGoalConcedeAgainstOppFormationAway = avgconcededOppFormation.reduce((a, b) => a + b) / avgconcededOppFormation.length
+        
+       console.log(aveGoalConcedeAgainstOppFormationAway);
+       setAveGoalConcedeAgainstOppFormationAway(aveGoalConcedeAgainstOppFormationAway)
+    }})
+      }
+      avgconcededOppFormationAway()
+    
+  
+    
+  }
+  handleClickAveConcededOppFormationAway()
 
 }
 
@@ -424,7 +720,19 @@ const handleSubmit = (e) => {
       {totalAvgHomeGoalsFormation} Total Average Formation goals {totalAvgAwayGoalsFormation}
       </div>
       <div className={styles.totalAverageFormation} >
+      {totalAvgHomeGoalsFormationScored} Total Average Formation goals scored {totalAvgAwayGoalsFormationScored}
+      </div>
+      <div className={styles.totalAverageFormation} >
+      {totalAvgHomeGoalsFormationConceded} Total Average Formation goals conceded {totalAvgAwayGoalsFormationConceded}
+      </div>
+      <div className={styles.totalAverageFormation} >
       {exactFormationTotalGoalsHome} Total Average exact formation goals {exactFormationTotalGoalsAway}
+      </div>
+      <div className={styles.totalAverageFormation} >
+      {aveGoalScoredAgainstOppFormationHome} Total Average score against opp formation {aveGoalScoredAgainstOppFormationAway}
+      </div>
+      <div className={styles.totalAverageFormation} >
+      {aveGoalConcedeAgainstOppFormationHome} Total Average conceded against opp formation {aveGoalConcedeAgainstOppFormationAway}
       </div>
       <div className={styles.totalAverageFormation} >
       {totalFormationBttsHome} Total Average btts {totalFormationBttsAway}

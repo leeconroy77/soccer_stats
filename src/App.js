@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {ScottishChampionship} from './directory/Directory.scottishChampionship'
+import {EnglishLeagueOne} from './directory/Directory.englishLeagueOne'
 
 import styles from './app.module.css'
 
@@ -11,6 +11,8 @@ const [valueAway, setvalueAway ] = useState("");
 const [homeFormation, setHomeFormation ] = useState("");
 const [awayFormation, setAwayFormation ] = useState("");
 const [upDatedHome, setUpDatedHome ] = useState("");
+const [totalHomeAvgAgainstAwayDefence, setTotalHomeAvgAgainstAwayDefence ] = useState(0);
+const [totalAwayAvgAgainstHomeDefence, setTotalAwayAvgAgainstHomeDefence ] = useState(0);
 const [upDatedHomeFormation, setUpDatedHomeFormation ] = useState(homeFormation);
 const [upDatedAway, setUpDatedAway ] = useState("");
 const [upDatedAwayFormation, setUpDatedAwayFormation ] = useState(awayFormation);
@@ -26,6 +28,8 @@ const [exactFormationTotalGoalsHome, setExactFormationTotalGoalsHome ] = useStat
 const [exactFormationTotalGoalsAway, setExactFormationTotalGoalsAway ] = useState(0);
 const [totalFormationBttsHome, setTotalFormationBttsHome ] = useState(0);
 const [totalFormationBttsAway, setTotalFormationBttsAway ] = useState(0);
+const [totalSecondHalfGoalsPercentageHome, setTotalSecondHalfGoalsPercentageHome ] = useState(0);
+const [totalSecondHalfGoalsPercentageAway, setTotalSecondHalfGoalsPercentageAway ] = useState(0);
 const [totalFormationFistHalfGoalsHome, setTotalFormationFistHalfGoalsHome ] = useState(0);
 const [totalFormationFistHalfGoalsAway, setTotalFormationFistHalfGoalsAway ] = useState(0);
 const [totalFormationSecondHalfGoalsHome, setTotalFormationSecondHalfGoalsHome ] = useState(0);
@@ -65,7 +69,7 @@ const handleSubmit = (e) => {
       let avgHomeGoals = []
       
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
       
       if (upDatedHome === match.team && match.ground === "home") {
       avgHomeGoals.push(match.total_goals) 
@@ -85,6 +89,133 @@ const handleSubmit = (e) => {
   }
 
   handleClickHome()
+
+
+  const handleClickAway = (e) => {
+    
+    setUpDatedAway(valueAway)
+  
+    const avgAwayTotalGoals = () => {
+      let avgAwayGoals = []
+      
+      
+      EnglishLeagueOne.map(match =>  {
+      
+      if (upDatedAway === match.team && match.ground === "away") {
+      avgAwayGoals.push(match.total_goals)
+      console.log(avgAwayGoals);
+      
+    }})
+    avgAwayGoals.reverse()
+      let avgAwayGoalsFiltered = avgAwayGoals.filter((el, i) => i < 5)
+    console.log(avgAwayGoalsFiltered);
+    const totalAvgAwayGoals = avgAwayGoals.reduce((a, b) => a + b) / avgAwayGoals.length
+      
+     console.log(totalAvgAwayGoals);
+    return setTotalAvgAwayGoals(totalAvgAwayGoals)
+     
+      
+
+    
+  
+    }
+    
+    avgAwayTotalGoals()
+
+
+
+    const handleClickHomeAgainstAwayDefence = (e) => {
+    
+      setAwayFormation(awayFormation)   
+      setUpDatedHome(valueHome) 
+    
+      const avgHomeTotalGoalsAgainstOppDefence = () => {
+        setAwayFormation(awayFormation)   
+      setUpDatedHome(valueHome) 
+        let avgHomeGoalsAgainstAwayDefence = []
+        let awayDefence = []
+        awayDefence = awayFormation.split("")
+        awayDefence = awayDefence[0]
+        awayDefence = awayDefence * 1
+
+
+        console.log(typeof(awayDefence))
+        
+        
+        EnglishLeagueOne.map(match =>  {
+        
+        if (upDatedHome === match.team && match.opp_def === awayDefence && match.ground === "home" ) {
+          avgHomeGoalsAgainstAwayDefence.push(match.total_goals) 
+        console.log(avgHomeGoalsAgainstAwayDefence);
+       
+        }})
+        avgHomeGoalsAgainstAwayDefence.reverse()
+        console.log(avgHomeGoalsAgainstAwayDefence);
+      let avgHomeGoalsFiltered = avgHomeGoalsAgainstAwayDefence.filter((el, i) => i < 5)
+      console.log(avgHomeGoalsFiltered);
+      const totalHomeAvgAgainstAwayDefence = avgHomeGoalsAgainstAwayDefence.reduce((a, b) => a + b) / avgHomeGoalsAgainstAwayDefence.length
+      
+      setTotalHomeAvgAgainstAwayDefence(totalHomeAvgAgainstAwayDefence)
+    
+      }
+      avgHomeTotalGoalsAgainstOppDefence()
+    }
+  
+    handleClickHomeAgainstAwayDefence()
+
+
+    const handleClickAwayAgainstHomeDefence = (e) => {
+    
+      setHomeFormation(homeFormation)   
+      setUpDatedAway(valueAway) 
+    
+      const avgAwayTotalGoalsAgainstOppDefence = () => {
+        setHomeFormation(homeFormation)   
+      setUpDatedAway(valueAway)
+        let avgAwayGoalsAgainstHomeDefence = []
+        let homeDefence = []
+        homeDefence = homeFormation.split("")
+        homeDefence = homeDefence[0]
+        homeDefence = homeDefence * 1
+
+
+        console.log(typeof(homeDefence))
+        
+        
+        EnglishLeagueOne.map(match =>  {
+        
+        if (upDatedAway === match.team && match.opp_def === homeDefence && match.ground === "away" ) {
+          avgAwayGoalsAgainstHomeDefence.push(match.total_goals) 
+        console.log(avgAwayGoalsAgainstHomeDefence);
+       
+        }})
+        avgAwayGoalsAgainstHomeDefence.reverse()
+        console.log(avgAwayGoalsAgainstHomeDefence);
+      let avgAwayGoalsFiltered = avgAwayGoalsAgainstHomeDefence.filter((el, i) => i < 5)
+      console.log(avgAwayGoalsFiltered);
+      const totalAwayAvgAgainstHomeDefence = avgAwayGoalsAgainstHomeDefence.reduce((a, b) => a + b) / avgAwayGoalsAgainstHomeDefence.length
+      
+      setTotalAwayAvgAgainstHomeDefence(totalAwayAvgAgainstHomeDefence)
+    
+      }
+      avgAwayTotalGoalsAgainstOppDefence()
+    }
+  
+    handleClickAwayAgainstHomeDefence()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   const handleClickHomeformation = (e) => {
     
@@ -96,7 +227,7 @@ const handleSubmit = (e) => {
       setUpDatedHomeFormation(homeFormation)  
       setUpDatedHome(valueHome) 
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
       
       if (homeFormation === match.formation && match.ground === "home" && valueHome === match.team) {
         avgHomeGoalsFormation.push(match.total_goals)
@@ -132,7 +263,7 @@ const handleSubmit = (e) => {
       setUpDatedHomeFormation(homeFormation)  
       setUpDatedHome(valueHome) 
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
       
       if (homeFormation === match.formation && match.ground === "home" && valueHome === match.team) {
         avgHomeGoalsScoredFormation.push(match.home_goals)
@@ -164,7 +295,7 @@ const handleSubmit = (e) => {
       setUpDatedHomeFormation(homeFormation)  
       setUpDatedHome(valueHome) 
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
       
       if (homeFormation === match.formation && match.ground === "home" && valueHome === match.team) {
         avgHomeGoalsConcededFormation.push(match.away_goals)
@@ -199,7 +330,7 @@ const handleSubmit = (e) => {
       setUpDatedAwayFormation(awayFormation)  
       setUpDatedAway(valueAway) 
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
       
       if (awayFormation === match.formation && match.ground === "away" && valueAway === match.team) {
         avgAwayGoalsScoredFormation.push(match.away_goals)
@@ -231,7 +362,7 @@ const handleSubmit = (e) => {
       setUpDatedAwayFormation(awayFormation)   
     setUpDatedAway(valueAway)  
       
-    ScottishChampionship.map(match =>  {
+    EnglishLeagueOne.map(match =>  {
       
       if (awayFormation === match.formation && match.ground === "away" && valueAway === match.team) {
         avgAwayGoalsConcededFormation.push(match.home_goals)
@@ -263,36 +394,7 @@ const handleSubmit = (e) => {
 
 
   
-  const handleClickAway = (e) => {
-    
-    setUpDatedAway(valueAway)
   
-    const avgAwayTotalGoals = () => {
-      let avgAwayGoals = []
-      
-      
-      ScottishChampionship.map(match =>  {
-      
-      if (upDatedAway === match.team && match.ground === "away") {
-      avgAwayGoals.push(match.total_goals)
-      console.log(avgAwayGoals);
-      
-    }})
-    avgAwayGoals.reverse()
-      let avgAwayGoalsFiltered = avgAwayGoals.filter((el, i) => i < 5)
-    console.log(avgAwayGoalsFiltered);
-    const totalAvgAwayGoals = avgAwayGoals.reduce((a, b) => a + b) / avgAwayGoals.length
-      
-     console.log(totalAvgAwayGoals);
-    return setTotalAvgAwayGoals(totalAvgAwayGoals)
-     
-      
-
-    
-  
-    }
-    
-    avgAwayTotalGoals()
     
   }
   handleClickAway()
@@ -307,7 +409,7 @@ const handleSubmit = (e) => {
     setUpDatedHome(valueHome) 
     setUpDatedHomeFormation(homeFormation)  
       
-    ScottishChampionship.map(match =>  {
+    EnglishLeagueOne.map(match =>  {
     
     if (valueHome === match.team && homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home" ) {
       avgHomeGoalsFormationExact.push(match.total_goals)
@@ -330,7 +432,7 @@ const handleSubmit = (e) => {
     let avgAwayGoalsFormationExact = []
       
       
-    ScottishChampionship.map(match =>  {
+    EnglishLeagueOne.map(match =>  {
     
     if (valueAway === match.team && awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away" ) {
       avgAwayGoalsFormationExact.push(match.total_goals)
@@ -356,7 +458,7 @@ const handleSubmit = (e) => {
       console.log(awayFormation);
       
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
       
       if (awayFormation === match.formation && match.ground === "away" && valueAway === match.team) {
       avgAwayGoalsFormation.push(match.total_goals)
@@ -391,7 +493,7 @@ const handleSubmit = (e) => {
       let avgHomeBtts = []
       
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
     
         if (homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home") {
           avgHomeBtts.push(match.btts)
@@ -421,7 +523,7 @@ const handleSubmit = (e) => {
       let avgAwayBtts = []
       
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
     
         if (awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away") {
           avgAwayBtts.push(match.btts)
@@ -449,6 +551,98 @@ const handleSubmit = (e) => {
 
 
 
+  const handleClickHomeSecondHalfGoalPercentage = (e) => {
+  
+    setUpDatedHome(valueHome) 
+    setUpDatedHomeFormation(homeFormation)  
+  
+    const homeFormationSecondHalfGoalPercentage = () => {
+      let avgHomeSecondHalfGoalPercentage = []
+      setUpDatedHome(valueHome) 
+    setUpDatedHomeFormation(homeFormation)  
+      
+    EnglishLeagueOne.map(match =>  {
+    
+        if (homeFormation === match.formation && valueHome === match.team && match.ground === "home" ) {
+          
+          match.second_half_goals > 0 ?  avgHomeSecondHalfGoalPercentage.push(1) : avgHomeSecondHalfGoalPercentage.push(0) 
+        }
+
+         console.log(avgHomeSecondHalfGoalPercentage);
+         
+        })
+        avgHomeSecondHalfGoalPercentage.reverse()
+      console.log(avgHomeSecondHalfGoalPercentage);
+    let avgHomeSecondHalfGoalsPercentageFiltered = avgHomeSecondHalfGoalPercentage.filter((el, i) => i < 5)
+    console.log(avgHomeSecondHalfGoalsPercentageFiltered);
+       
+      const totalSecondHalfGoalsPercentageHome = avgHomeSecondHalfGoalsPercentageFiltered.reduce((a, b) => a + b) / avgHomeSecondHalfGoalsPercentageFiltered.length
+        
+       console.log(totalSecondHalfGoalsPercentageHome);
+       setTotalSecondHalfGoalsPercentageHome(totalSecondHalfGoalsPercentageHome)
+    
+      }
+      homeFormationSecondHalfGoalPercentage()
+    
+  
+    
+  }
+  handleClickHomeSecondHalfGoalPercentage()
+
+
+
+  const handleClickAwaySecondHalfGoalPercentage = (e) => {
+  
+    setUpDatedAway(valueAway) 
+    setUpDatedAwayFormation(awayFormation)  
+  
+    const AwayFormationSecondHalfGoalPercentage = () => {
+      let avgAwaySecondHalfGoalPercentage = []
+      setUpDatedAway(valueAway) 
+    setUpDatedAwayFormation(awayFormation) 
+      
+    EnglishLeagueOne.map(match =>  {
+    
+        if (awayFormation === match.formation && valueAway === match.team && match.ground === "away" ) {
+          
+          match.second_half_goals > 0 ?  avgAwaySecondHalfGoalPercentage.push(1) : avgAwaySecondHalfGoalPercentage.push(0) 
+        }
+
+         console.log(avgAwaySecondHalfGoalPercentage);
+         
+        })
+        avgAwaySecondHalfGoalPercentage.reverse()
+      console.log(avgAwaySecondHalfGoalPercentage);
+    let avgAwaySecondHalfGoalsPercentageFiltered = avgAwaySecondHalfGoalPercentage.filter((el, i) => i < 5)
+    console.log(avgAwaySecondHalfGoalsPercentageFiltered);
+       
+      const totalSecondHalfGoalsPercentageAway = avgAwaySecondHalfGoalsPercentageFiltered.reduce((a, b) => a + b) / avgAwaySecondHalfGoalsPercentageFiltered.length
+        
+       console.log(totalSecondHalfGoalsPercentageAway);
+       setTotalSecondHalfGoalsPercentageAway(totalSecondHalfGoalsPercentageAway)
+    
+      }
+      AwayFormationSecondHalfGoalPercentage()
+    
+  
+    
+  }
+  handleClickAwaySecondHalfGoalPercentage()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -461,7 +655,7 @@ const handleSubmit = (e) => {
       let avgfirstHalfGoal = []
       
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
     
         if (homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home") {
           avgfirstHalfGoal.push(match.first_half_goals)
@@ -492,7 +686,7 @@ const handleSubmit = (e) => {
       let avgAwayFistHalfGoals  = []
       
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
     
         if (awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away") {
           avgAwayFistHalfGoals.push(match.first_half_goals)
@@ -532,7 +726,7 @@ const handleSubmit = (e) => {
       let avgSecondHalfGoal = []
       
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
     
         if (homeFormation === match.formation && awayFormation === match.opp_formation && match.ground === "home") {
           avgSecondHalfGoal.push(match.second_half_goals)
@@ -562,7 +756,7 @@ const handleSubmit = (e) => {
       let avgAwaySecondHalfGoals  = []
       
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
     
         if (awayFormation === match.formation && homeFormation === match.opp_formation && match.ground === "away") {
           avgAwaySecondHalfGoals.push(match.second_half_goals)
@@ -591,7 +785,7 @@ const handleSubmit = (e) => {
       let avgGoalOppFormation = []
       
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
     
         if (valueHome === match.team && awayFormation === match.opp_formation && match.ground === "home") {
           avgGoalOppFormation.push(match.home_goals)
@@ -619,7 +813,7 @@ const handleSubmit = (e) => {
       let avgconcededOppFormation = []
       
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
     
         if (valueHome === match.team && awayFormation === match.opp_formation && match.ground === "home") {
           avgconcededOppFormation.push(match.away_goals)
@@ -662,7 +856,7 @@ const handleSubmit = (e) => {
       let avgGoalOppFormation = []
       
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
     
         if (valueAway === match.team && homeFormation === match.opp_formation && match.ground === "away") {
           avgGoalOppFormation.push(match.away_goals)
@@ -690,7 +884,7 @@ const handleSubmit = (e) => {
       let avgconcededOppFormation = []
       
       
-      ScottishChampionship.map(match =>  {
+      EnglishLeagueOne.map(match =>  {
     
         if (valueAway=== match.team && homeFormation === match.opp_formation && match.ground === "away") {
           avgconcededOppFormation.push(match.home_goals)
@@ -736,29 +930,37 @@ const handleSubmit = (e) => {
       {totalAvgHomeGoalsFormation} Total Average Formation goals {totalAvgAwayGoalsFormation}
       </div>
       <div className={styles.totalAverageFormation} >
+      {exactFormationTotalGoalsHome} Total Average exact formation goals {exactFormationTotalGoalsAway}
+      </div>
+      {/* <div className={styles.totalAverageFormation} >
+      {totalHomeAvgAgainstAwayDefence} Total Average Against opp Defence {totalAwayAvgAgainstHomeDefence}
+      </div>
+      <div className={styles.totalAverageFormation} >
       {totalAvgHomeGoalsFormationScored} Total Average Formation goals scored {totalAvgAwayGoalsFormationScored}
       </div>
       <div className={styles.totalAverageFormation} >
       {totalAvgHomeGoalsFormationConceded} Total Average Formation goals conceded {totalAvgAwayGoalsFormationConceded}
       </div>
-      <div className={styles.totalAverageFormation} >
-      {exactFormationTotalGoalsHome} Total Average exact formation goals {exactFormationTotalGoalsAway}
-      </div>
+      
       <div className={styles.totalAverageFormation} >
       {aveGoalScoredAgainstOppFormationHome} Total Average score against opp formation {aveGoalScoredAgainstOppFormationAway}
       </div>
       <div className={styles.totalAverageFormation} >
       {aveGoalConcedeAgainstOppFormationHome} Total Average conceded against opp formation {aveGoalConcedeAgainstOppFormationAway}
-      </div>
+      </div> */}
       <div className={styles.totalAverageFormation} >
       {totalFormationBttsHome} Total Average btts {totalFormationBttsAway}
       </div>
-      <div className={styles.totalAverageFormation} >
+      {/* <div className={styles.totalAverageFormation} >
       {totalFormationFistHalfGoalsHome} Total Average 1st Half Goals {totalFormationFistHalfGoalsAway}
-      </div>
+      </div> */}
       <div className={styles.totalAverageFormation} >
       {totalFormationSecondHalfGoalsHome} Total Average 2nd Half Goals {totalFormationSecondHalfGoalsAway}
       </div>
+      <div className={styles.totalAverageFormation} >
+      {totalSecondHalfGoalsPercentageHome} Total Average 2nd Half Goals % {totalSecondHalfGoalsPercentageAway}
+      </div>
+      
         
     </div>
   );

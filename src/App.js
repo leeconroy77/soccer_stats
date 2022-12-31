@@ -14,8 +14,13 @@ import {BulgarianParvaLiga} from './directory/Directory.bulgarianParvaLiga'
 import {IndianISL} from './directory/Directory.indianISL.js'
 import {ChineseSuperLeague} from './directory/Directory.chineseSuperLeague'
 import {Turkish1Lig} from './directory/Directory.turkish1Lig'
+import {SpanishLaLiga} from './directory/Directory.spanishLaLiga'
 import {SpanishLaLiga2} from './directory/Directory.spanishLaLiga2'
 import {RomanianLiga1} from './directory/Directory.romanianLiga1'
+import {BelgianChallengerProLeague} from './directory/Directory.belgianChallengerProLeague'
+import {FrenchLigue1} from './directory/Directory.frenchLigue1'
+import {FrenchLigue2} from './directory/Directory.frenchLigue2'
+import {TurkishSuperLig} from './directory/Directory.turkishSuperLig'
 
 import styles from './app.module.css'
 
@@ -47,7 +52,7 @@ function App() {
 
 
 const leagues = [
-  {value: "EnglishPremier", label: "EnglishPremier"}, {value: "EnglishChampionship",label: "EnglishChampionship"}, {value: "EnglishLeagueOne", label: "EnglishLeagueOne"}, {value: "EnglishLeagueTwo", label: "EnglishLeagueTwo"}, {value: "IndianISL", label: "IndianISL"}, {value: "BulgarianParvaLiga", label: "BulgarianParvaLiga"}, {value: "Turkish1Lig", label: "Turkish1Lig"}, {value: "ChineseSuperLeague", label: "ChineseSuperLeague"}
+  {value: "EnglishPremier", label: "EnglishPremier"}, {value: "EnglishChampionship",label: "EnglishChampionship"}, {value: "EnglishLeagueOne", label: "EnglishLeagueOne"}, {value: "EnglishLeagueTwo", label: "EnglishLeagueTwo"}, {value: "IndianISL", label: "IndianISL"}, {value: "BulgarianParvaLiga", label: "BulgarianParvaLiga"}, {value: "Turkish1Lig", label: "Turkish1Lig"}, {value: "ChineseSuperLeague", label: "ChineseSuperLeague"},{value: "SerieB", label: "SerieB"}
 ]
 
 const formaton = [
@@ -57,6 +62,11 @@ const formaton = [
 const EnglishPremierTeams = [
   {value: "Arsenal", label: "Arsenal"}, {value: "Aston Villa",label: "Aston Villa"}, {value: "Bournemouth", label: "Bournemouth"}, {value: "Brentford", label: "Brentford"}, {value: "Brighton",label: "Brighton"}, {value: "Chelsea",label: "Chelsea"}, {value: "Crystal Palace",label: "Crystal Palace"}, {value: "Everton",label: "Everton"}, {value: "Fulham",label: "Fulham"}, {value: "Leeds",label: "Leeds"},  {value: "Leicester",label: "Leicester"},{value: "Liverpool",label: "Liverpool"}, {value: "Man City",label: "Man City"}, {value: "Man Utd",label: "Man Utd"}, {value: "Newcastle",label: "Newcastle"}, {value: "Nottm Forest",label: "Nottm Forest"}, {value: "Southampton",label: "Southampton"}, {value: "Tottenham",label: "Tottenham"}, {value: "West Ham",label: "West Ham"}, {value: "Wolves",label: "Wolves"}
 ]
+
+const EnglishChampionshipTeams = [
+  {value: "Accrington", label: "Accrington"}, {value: "Barnsley",label: "Barnsley"}, {value: "Bolton", label: "Bolton"}, {value: "Bristol Rovers", label: "Bristol Rovers"}, {value: "Burton",label: "Burton"}, {value: "Cambridge Utd",label: "Cambridge Utd"}, {value: "Charlton",label: "Charlton"}, {value: "Cheltenham",label: "Cheltenham"}, {value: "Derby",label: "Derby"}, {value: "Exeter",label: "Exeter"},  {value: "Fleetwood",label: "Fleetwood"},{value: "Forest Green",label: "Forest Green"}, {value: "Ipswich",label: "Ipswich"},{value: "Lincoln",label: "Lincoln"},{value: "Morecambe",label: "Morecambe"}, {value: "MK Dons",label: "MK Dons"},{value: "Oxford Utd",label: "Oxford Utd"}, {value: "Peterborough",label: "Peterborough"}, {value: "Plymouth",label: "Plymouth"},{value: "Portsmouth",label: "Portsmouth"},{value: "Port Vale",label: "Port Vale"}, {value: "Sheff Wed",label: "Sheff Wed"}, {value: "Shrewsbury",label: "Shrewsbury"}, {value: "Wycombe",label: "Wycombe"}
+] 
+
 const EnglishLeagueOneTeams = [
   {value: "Accrington", label: "Accrington"}, {value: "Barnsley",label: "Barnsley"}, {value: "Bolton", label: "Bolton"}, {value: "Bristol Rovers", label: "Bristol Rovers"}, {value: "Burton",label: "Burton"}, {value: "Cambridge Utd",label: "Cambridge Utd"}, {value: "Charlton",label: "Charlton"}, {value: "Cheltenham",label: "Cheltenham"}, {value: "Derby",label: "Derby"}, {value: "Exeter",label: "Exeter"},  {value: "Fleetwood",label: "Fleetwood"},{value: "Forest Green",label: "Forest Green"}, {value: "Ipswich",label: "Ipswich"},{value: "Lincoln",label: "Lincoln"},{value: "Morecambe",label: "Morecambe"}, {value: "MK Dons",label: "MK Dons"},{value: "Oxford Utd",label: "Oxford Utd"}, {value: "Peterborough",label: "Peterborough"}, {value: "Plymouth",label: "Plymouth"},{value: "Portsmouth",label: "Portsmouth"},{value: "Port Vale",label: "Port Vale"}, {value: "Sheff Wed",label: "Sheff Wed"}, {value: "Shrewsbury",label: "Shrewsbury"}, {value: "Wycombe",label: "Wycombe"}
 ]
@@ -77,8 +87,24 @@ const Turkish1LigTeams = [
 const ChineseSuperLeagueTeams = [
   {value: "Beijing Guoan", label: "Beijing Guoan"}, {value: "Cangzhou",label: "Cangzhou"}, {value: "Changchun Yatai",label: "Changchun Yatai"},{value: "Chengdu Rongcheng", label: "Chengdu Rongcheng"}, {value: "Dalian Pro", label: "Dalian Pro"}, {value: "Guangzhou City",label: "Guangzhou City"}, {value: "Guangzhou FC",label: "Guangzhou FC"}, {value: "Hebei",label: "Hebei"}, {value: "Henan Songshan Longmen",label: "Henan Songshan Longmen"}, {value: "Meizhou Hakka",label: "Meizhou Hakka"}, {value: "Shandong Taishan",label: "Shandong Taishan"}, {value: "Shanghai Port",label: "Shanghai Port"}, {value: "Shanghai Shenhua",label: "Shanghai Shenhua"}, {value: "Shenzhen",label: "Shenzhen"}, {value: "Tianjin Jinmen Tiger",label: "Tianjin Jinmen Tiger"}, {value: "Wuhan FC",label: "Wuhan FC"}, {value: "Wuhan Three Towns",label: "Wuhan Three Towns"}, {value: "Zhejiang Professional",label: "Zhejiang Professional"}
 ]
+const SerieBTeams = [
+  {value: "Ascoli", label: "Ascoli"}, {value: "Bari",label: "Bari"}, {value: "Benevento", label: "Benevento"}, {value: "Brescia", label: "Brescia"}, 
+   {value: "Cagliari",label: "Cagliari"}, {value: "Cittadella",label: "Cittadella"}, {value: "Como",label: "Como"}, {value: "Cosenza",label: "Cosenza"}, {value: "Frosinone",label: "Frosinone"}, {value: "Genoa",label: "Genoa"}, {value: "Modena",label: "Modena"},  {value: "Palermo",label: "Palermo"},{value: "Parma",label: "Parma"}, {value: "Perugia",label: "Perugia"}, {value: "Pisa",label: "Pisa"}, {value: "Reggina",label: "Reggina"}, {value: "Spal",label: "Spal"}, {value: "Sudtirol",label: "Sudtirol"}, {value: "Ternana",label: "Ternana"}, {value: "Venezia",label: "Venezia"}
+]
 
+const RomanianLiga1Teams = [
+  {value: "Botosani", label: "Botosani"}, {value: "CFR Cluj", label: "CFR Cluj"}, {value: "Chindia Targoviste",label: "Chindia Targoviste"}, {value: "Farul Constanta", label: "Farul Constanta"}, {value: "FC Arges", label: "FC Arges"}, 
+   {value: "FC Hermannstadt",label: "FC Hermannstadt"}, {value: "FC Rapid Bucuresti",label: "FC Rapid Bucuresti"}, {value: "FC Voluntari",label: "FC Voluntari"}, {value: "FCSB",label: "FCSB"}, {value: "Mioveni",label: "Mioveni"}, {value: "Petrolul",label: "Petrolul"}, {value: "Sepsi Sf. Gheorghe",label: "Sepsi Sf. Gheorghe"},  {value: "U. Cluj",label: "U. Cluj"},{value: "U Craiova 1948",label: "U Craiova 1948"}, {value: "Univ. Craiova",label: "Univ. Craiova"}, {value: "UTA Arad",label: "UTA Arad"}
+]
 
+const SpanishLaLiga2Teams = [
+  {value: "Alaves", label: "Alaves"}, {value: "Albacete",label: "Albacete"}, {value: "Andorra", label: "Andorra"}, {value: "Burgos CF", label: "Burgos CF"}, {value: "Cartagena",label: "Cartagena"}, {value: "Eibar",label: "Eibar"}, {value: "Gijon",label: "Gijon"}, {value: "Granada",label: "Granada"}, {value: "Huesca",label: "Huesca"}, {value: "Las Palmas",label: "Las Palmas"}, 
+  {value: "Leganes",label: "Leganes"}, {value: "Levante",label: "Levante"},{value: "Lugo",label: "Lugo"}, {value: "Malaga",label: "Malaga"},{value: "Mirandes",label: "Mirandes"}, {value: "Ponferradina",label: "Ponferradina"}, {value: "R. Oviedo",label: "R. Oviedo"},{value: "Racing Santander",label: "Racing Santander"}, {value: "Tenerife",label: "Tenerife"}, {value: "Villarreal B",label: "Villarreal B"},{value: "UD Ibiza",label: "UD Ibiza"},{value: "Zaragoza",label: "Zaragoza"}
+]
+const ScottishPremiershipTeams = [
+  {value: "Aberdeen", label: "Aberdeen"}, {value: "Celtic", label: "Celtic"}, {value: "Dundee Utd",label: "Dundee Utd"}, {value: "Hearts", label: "Hearts"}, {value: "Hibernian", label: "Hibernian"}, 
+   {value: "Kilmarnock",label: "Kilmarnock"}, {value: "Livingston",label: "Livingston"},{value: "Motherwell",label: "Motherwell"},{value: "Rangers",label: "Rangers"}, {value: "Ross County",label: "Ross County"}, {value: "St. Johnstone",label: "St. Johnstone"}, {value: "St. Mirren",label: "St. Mirren"}
+]
 
 
 
@@ -212,6 +238,25 @@ if (valueLeague === "ChineseSuperLeague") {
   leagueTeams = ChineseSuperLeagueTeams
  
 }
+if (valueLeague === "SerieB") {
+  leagueName = SerieB
+  leagueTeams = SerieBTeams
+ 
+}
+
+if (valueLeague === "RomanianLiga1") {
+  leagueName = RomanianLiga1
+  leagueTeams = RomanianLiga1Teams
+}
+
+if (valueLeague === "SpanishLaLiga2") {
+  leagueName = SpanishLaLiga2
+  leagueTeams = SpanishLaLiga2Teams
+}
+if (valueLeague === "ScottishPremiership") {
+  leagueName = ScottishPremiership
+  leagueTeams = ScottishPremiershipTeams
+}
 
 
 const handleHomeTeamChange = (selectedOption) => {
@@ -250,11 +295,11 @@ const handleSubmit = (e) => {
   setUpDatedAway(valueAway)
 
  
+  let array = EnglishLeagueTwo.reverse();
 
 
 
-
-  let array = SerieB.reverse();
+  
   let homeSecondHalfGoals = [];
   let awaySecondHalfGoals = [];
   let aveSecondHalfHomeGoals = [];
@@ -270,7 +315,7 @@ const handleSubmit = (e) => {
 console.log(array);
 
 
-for (let i = 60; i < array.length; i++) {
+for (let i = 56; i < array.length; i++) {
   let homeTeam = array[i].homeTeam;
   let awayTeam = array[i].awayTeam;
   let HomeFormation = array[i].homeFormation;
@@ -281,6 +326,35 @@ for (let i = 60; i < array.length; i++) {
   let homeHalfTimeGoals = array[i].homeHalfTimeGoals
   let firstGoalTime = array[i].firstGoalTime
   let halfTimeScore = `${homeHalfTimeGoals}-${awayHalfTimeGoals}`
+  let totalGoals = array[i].totalGoals
+  let totalHomeFormationGoals = []
+  let totalAwayFormationGoals = []
+  let aveTotalHomeGoals = 0;
+  let aveTotalAwayGoals = 0;
+  let homeGoalsScoredOvers = []
+  let homeGoalsConcededOvers = []
+  let awayGoalsScoredOvers = []
+  let awayGoalsConcededOvers = []
+  let totalHomeGoalsOvers = []
+  let aveHomeGoalsOvers = 0
+  let totalHomeGoalsConcededOvers = []
+  let aveHomeGoalsConcededOvers = 0
+  let totalAwayGoalsOvers = []
+  let aveAwayGoalsOvers = 0
+  let totalAwayGoalsConcededOvers = []
+  let aveAwayGoalsConcededOvers = 0
+  let homeGoalsScoredFh =[]
+  let homeGoalsConcededFh =[]
+  let awayGoalsScoredFh =[]
+  let awayGoalsConcededFh =[]
+  let totalHomeGoalsFh =[]
+  let totalHomeGoalsConcededFh =[]
+  let totalAwayGoalsFh =[]
+  let totalAwayGoalsConcededFh =[]
+  let aveHomeGoalsFh = 0
+  let aveHomeGoalsConcededFh = 0
+  let aveAwayGoalsFh = 0
+  let aveAwayGoalsConcededFh = 0
   
   
   console.log(homeTeam);
@@ -293,55 +367,248 @@ for (let i = 60; i < array.length; i++) {
   
 
   for (let j = 0; j < i; j++) {
-    if ((array[j].homeTeam === array[i].homeTeam) && (array[j].homeFormation === array[i].homeFormation)) {
-      homeSecondHalfGoals.push(array[j].secondHalfGoals)
-      homeSecondHalfGoals.reverse()
-      homeSecondHalfGoals = homeSecondHalfGoals.filter((x, i) => i < 6)
-      aveSecondHalfHomeGoals = homeSecondHalfGoals.reduce((a, b) => a + b, 0) / homeSecondHalfGoals.length
-      console.log(array[j].homeFormation);
-      
-      
+    
+    if ((array[j].homeTeam === array[i].homeTeam) && (array[j].homeFormation === array[i].homeFormation))  {
+      homeSecondHalfGoals.push(array[j].secondHalfGoals )
+      console.log(homeSecondHalfGoals);
       
   }
   if ((array[j].awayTeam === array[i].awayTeam) && (array[j].awayFormation === array[i].awayFormation)) {
-    awaySecondHalfGoals.push(array[j].secondHalfGoals)
-    awaySecondHalfGoals.reverse()
-    awaySecondHalfGoals = awaySecondHalfGoals.filter((x, i) => i <6)
-    aveSecondHalfAwayGoals = awaySecondHalfGoals.reduce((a, b) => a + b, 0) / awaySecondHalfGoals.length 
+        awaySecondHalfGoals.push(array[j].secondHalfGoals)    
+        console.log(awaySecondHalfGoals);     
+      }
+
+  if ((array[j].homeTeam === array[i].homeTeam) && (array[j].homeFormation === HomeFormation)) {
+            totalHomeFormationGoals.push(array[j].totalGoals)
+            console.log(totalHomeFormationGoals); 
+          } 
+  if ((array[j].awayTeam === array[i].awayTeam) && (array[j].awayFormation === awayFormation)) {
+    totalAwayFormationGoals.push(array[j].totalGoals)
+            console.log(totalAwayFormationGoals); 
+  }
+
+
+
+///////////////////  X Goals 2.5/////////////////////
+
+          
+   if ((array[j].homeTeam === array[i].homeTeam) && (array[j].homeFormation === array[i].homeFormation))  {
+            homeGoalsScoredOvers.push(array[j].homeGoals )
+            console.log(homeGoalsScoredOvers);
+            
+        }
+   if ((array[j].homeTeam === array[i].homeTeam) && (array[j].homeFormation === array[i].homeFormation))  {
+          homeGoalsConcededOvers.push(array[j].awayGoals )
+          console.log(homeGoalsConcededOvers);
+      }
+
+      if ((array[j].awayTeam === array[i].awayTeam) && (array[j].awayFormation === array[i].awayFormation)) {
+        awayGoalsScoredOvers.push(array[j].awayGoals)    
+        console.log(awayGoalsScoredOvers);     
+      }
+      if ((array[j].awayTeam === array[i].awayTeam) && (array[j].awayFormation === array[i].awayFormation)) {
+        awayGoalsConcededOvers.push(array[j].homeGoals)    
+        console.log(awayGoalsConcededOvers);     
+      }
+
+      ///////////////  X Goals first half/////////////////////
+
+    
+    // if ((array[j].homeTeam === array[i].homeTeam) && (array[j].homeFormation === array[i].homeFormation))  {
+    //          homeGoalsScoredFh.push(array[j].homeHalfTimeGoals )
+    //          console.log(homeGoalsScoredFh);
+             
+    //      }
+    // if ((array[j].homeTeam === array[i].homeTeam) && (array[j].homeFormation === array[i].homeFormation))  {
+    //        homeGoalsConcededFh.push(array[j].awayHalfTimeGoals )
+    //        console.log(homeGoalsConcededFh);
+    //    }
+ 
+    //    if ((array[j].awayTeam === array[i].awayTeam) && (array[j].awayFormation === array[i].awayFormation)) {
+    //      awayGoalsScoredFh.push(array[j].awayHalfTimeGoals)    
+    //      console.log(awayGoalsScoredFh);     
+    //    }
+    //    if ((array[j].awayTeam === array[i].awayTeam) && (array[j].awayFormation === array[i].awayFormation)) {
+    //      awayGoalsConcededFh.push(array[j].homeHalfTimeGoals)    
+    //      console.log(awayGoalsConcededFh);     
+    //    }
+
+      
+
+
+    }
+      homeSecondHalfGoals.reverse()
+      console.log(homeSecondHalfGoals);
+      homeSecondHalfGoals = homeSecondHalfGoals.filter((x, i) => i < 2)
+      aveSecondHalfHomeGoals = homeSecondHalfGoals.reduce((a, b) => a + b, 0) / homeSecondHalfGoals.length
+      console.log(`aveSecondHalfHomeGoals  ${aveSecondHalfHomeGoals}`);
+
+      awaySecondHalfGoals.reverse()
+        awaySecondHalfGoals = awaySecondHalfGoals.filter((x, i) => i <2)
+        aveSecondHalfAwayGoals = awaySecondHalfGoals.reduce((a, b) => a + b, 0) / awaySecondHalfGoals.length 
+        console.log(`aveSecondHalfAwayGoals  ${aveSecondHalfAwayGoals}`);
+
+        totalHomeFormationGoals.reverse()
+        console.log(`totalHomeFormationGoals ${totalHomeFormationGoals}`);
+        totalHomeFormationGoals = totalHomeFormationGoals.filter((x, i) => i < 2)
+        aveTotalHomeGoals = totalHomeFormationGoals.reduce((a, b) => a + b, 0) / totalHomeFormationGoals.length
+        console.log(`aveTotalHomeGoals ${aveTotalHomeGoals}`);
+
+        totalAwayFormationGoals.reverse()
+        console.log(`totalAwayFormationGoals ${totalAwayFormationGoals}`);
+        totalAwayFormationGoals = totalAwayFormationGoals.filter((x, i) => i <2)
+        aveTotalAwayGoals = totalAwayFormationGoals.reduce((a, b) => a + b, 0) / totalAwayFormationGoals.length
+        console.log(`aveTotalAwayGoals ${aveTotalAwayGoals}`);
+
+/////////////////  X Goals 2.5/////////////////////
+
+        homeGoalsScoredOvers.reverse()
+        console.log(`totalHomeGoalsScored ${homeGoalsScoredOvers}`);
+        totalHomeGoalsOvers = homeGoalsScoredOvers.filter((x, i) => i <2)
+        console.log(`totalHomeGoalsScored ${homeGoalsScoredOvers}`);
+        aveHomeGoalsOvers = totalHomeGoalsOvers.reduce((a, b) => a + b, 0) / totalHomeGoalsOvers.length
+        console.log(`aveTotalHomeGoals ${aveHomeGoalsOvers}`);
+
+        homeGoalsConcededOvers.reverse()
+        console.log(`homeGoalsConceded ${homeGoalsConcededOvers}`);
+        totalHomeGoalsConcededOvers = homeGoalsConcededOvers.filter((x, i) => i <2)
+        aveHomeGoalsConcededOvers = totalHomeGoalsConcededOvers.reduce((a, b) => a + b, 0) / totalHomeGoalsConcededOvers.length
+        console.log(`aveHomeGoalsConceded ${aveHomeGoalsConcededOvers}`);
+
+        awayGoalsScoredOvers.reverse()
+        console.log(`awayGoalsScored ${awayGoalsScoredOvers}`);
+        totalAwayGoalsOvers = awayGoalsScoredOvers.filter((x, i) => i < 2)
+        aveAwayGoalsOvers = totalAwayGoalsOvers.reduce((a, b) => a + b, 0) / totalAwayGoalsOvers.length
+        console.log(`aveAwayGoals ${aveAwayGoalsOvers}`);
+
+        awayGoalsConcededOvers.reverse()
+        console.log(`awayGoalsConceded ${awayGoalsConcededOvers}`);
+        totalAwayGoalsConcededOvers = awayGoalsConcededOvers.filter((x, i) => i <2)
+        aveAwayGoalsConcededOvers = totalAwayGoalsConcededOvers.reduce((a, b) => a + b, 0) / totalAwayGoalsConcededOvers.length
+        console.log(`aveAwayGoalsConceded ${aveAwayGoalsConcededOvers}`);
+
+    /////////////  X Goals 2.5/////////////////////
+
+let homeGoalStrengthOvers = (aveHomeGoalsOvers + aveAwayGoalsConcededOvers) / 2
+let awayGoalStrengthOvers = (aveAwayGoalsOvers + aveHomeGoalsConcededOvers) / 2
+
+if (( homeGoalStrengthOvers > 0.75 &&homeGoalStrengthOvers <1.5)  && (awayGoalStrengthOvers  >0.5&& awayGoalStrengthOvers  <2.01) )  {
+  matchSelection = true
+  if(matchSelection === true && (array[i].totalGoals > 0)) {
+    strategyResults.push(1)
+    matches.push(  array[i].totalGoals, homeGoalStrengthOvers,awayGoalStrengthOvers)
+  }
+  if((matchSelection === true) && (array[i].totalGoals < 1)) {
+    strategyResults.push(0)
+    matches.push( array[i].totalGoals, homeGoalStrengthOvers,awayGoalStrengthOvers)
+  }
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  
+
+///////////////////  X Goals first half/////////////////////
+
+// homeGoalsScoredFh.reverse()
+// console.log(`totalHomeGoalsScored ${homeGoalsScoredFh}`);
+// totalHomeGoalsFh = homeGoalsScoredFh.filter((x, i) => i < 3)
+// aveHomeGoalsFh = totalHomeGoalsFh.reduce((a, b) => a + b, 0) / totalHomeGoalsFh.length
+// console.log(`aveTotalHomeGoals ${aveHomeGoalsFh}`);
+
+// homeGoalsConcededFh.reverse()
+// console.log(`homeGoalsConceded ${homeGoalsConcededFh}`);
+// totalHomeGoalsConcededFh = homeGoalsConcededFh.filter((x, i) => i <3)
+// aveHomeGoalsConcededFh = totalHomeGoalsConcededFh.reduce((a, b) => a + b, 0) / totalHomeGoalsConcededFh.length
+// console.log(`aveHomeGoalsConceded ${aveHomeGoalsConcededFh}`);
+
+// awayGoalsScoredFh.reverse()
+// console.log(`awayGoalsScored ${awayGoalsScoredFh}`);
+// totalAwayGoalsFh = awayGoalsScoredFh.filter((x, i) => i < 3)
+// aveAwayGoalsFh = totalAwayGoalsFh.reduce((a, b) => a + b, 0) / totalAwayGoalsFh.length
+// console.log(`aveAwayGoals ${aveAwayGoalsFh}`);
+
+// awayGoalsConcededFh.reverse()
+// console.log(`awayGoalsConceded ${awayGoalsConcededFh}`);
+// totalAwayGoalsConcededFh = awayGoalsConcededFh.filter((x, i) => i < 3)
+// aveAwayGoalsConcededFh = totalAwayGoalsConcededFh.reduce((a, b) => a + b, 0) / totalAwayGoalsConcededFh.length
+// console.log(`aveAwayGoalsConceded ${aveAwayGoalsConcededFh}`);
+  
+// /////////////////  X Goals first half/////////////////////
+
+// let homeGoalStrengthFh = (aveHomeGoalsFh + aveAwayGoalsConcededFh) / 2
+// let awayGoalStrengthFh = (aveAwayGoalsFh + aveHomeGoalsConcededFh) / 2
+
+// console.log(homeGoalStrengthFh);
+// console.log(awayGoalStrengthFh);
+
+
+// if(((homeGoalStrengthFh > -0.5 && homeGoalStrengthFh <11.5) && (  awayGoalStrengthFh > -0.25 && awayGoalStrengthFh < 12.4))) {
+// matchSelection = true
+// if(matchSelection === true && array[i].halfTimeGoals > 0 ) {
+// strategyResults.push(1)
+// matches.push(array[i].halfTimeGoals,homeGoalStrengthFh,awayGoalStrengthFh)
+// }
+// if((matchSelection === true) && array[i].halfTimeGoals < 1) {
+// strategyResults.push(0)
+// matches.push( array[i].halfTimeGoals,homeGoalStrengthFh,awayGoalStrengthFh)
+// }
+
+
+
+
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+// }
+
+
+
+
+
+  // if( (aveSecondHalfHomeGoals > 0.49 && aveSecondHalfHomeGoals <3.01) && ( aveSecondHalfAwayGoals > 0.49)&& ( aveSecondHalfAwayGoals <3.01)  && (homeGoalStrengthOvers > 0.7 &&homeGoalStrengthOvers <2.51) && (awayGoalStrengthOvers >0.3 && awayGoalStrengthOvers < 1.8)&& (halfTimeScore === "0-0" || halfTimeScore === "1-0" ||halfTimeScore === "0-1" ) ){
+  //   matchSelection = true
+  //   if(matchSelection === true && secondHalfGoals > 0 ) {
+  //     strategyResults.push(1)
+  //     matches.push(array[i].secondHalfGoals,aveSecondHalfHomeGoals,aveSecondHalfAwayGoals)
+  //   }
+  //   if((matchSelection === true) && (secondHalfGoals < 1)) {
+  //     strategyResults.push(0)
+  //     matches.push(array[i].secondHalfGoals,aveSecondHalfHomeGoals,aveSecondHalfAwayGoals)
+  //   }
+
+
+
+
     
   }
-  if ((array[j].homeTeam === array[i].homeTeam) && (array[j].homeFormation === array[i].homeFormation)) {
-    aveHomeGoals.push(array[j].totalGoals)
-    aveHomeGoals.reverse()
-    aveHomeGoals = aveHomeGoals.filter((x, i) => i < 5)
-    last4homeGoals = aveHomeGoals.reduce((a, b) => a + b, 0) / aveHomeGoals.length
-    console.log(last4homeGoals);
-}
-if ((array[j].awayTeam === array[i].awayTeam) && (array[j].awayFormation === array[i].awayFormation)) {
-  aveAwayGoals.push(array[j].totalGoals)
-  console.log(aveAwayGoals);
-  aveAwayGoals.reverse()
-  aveAwayGoals = aveAwayGoals.filter((x, i) => i < 5 )
-  console.log(aveAwayGoals, array[i].awayTeam,array[i].homeTeam);
-  last4AwayGoals = aveAwayGoals.reduce((a, b) => a + b, 0) / aveAwayGoals.length
-  console.log(last4AwayGoals);
-}
 
+
+
+// let combinedFormation = (aveTotalHomeGoals + aveTotalAwayGoals) / 2
+
+  // if((aveSecondHalfHomeGoals > 1 && aveSecondHalfHomeGoals < 3.01) && ( aveSecondHalfAwayGoals > 0.99 && aveSecondHalfAwayGoals < 2.1)  && (combinedFormation >2.99 && combinedFormation < 4.01)) {
+  //   matchSelection = true
+  //   if(matchSelection === true && totalGoals > 1 ) {
+  //     strategyResults.push(1)
+  //     matches.push(array[i].homeTeam, array[i].awayTeam)
+  //   }
+  //   if((matchSelection === true) && (totalGoals < 2)) {
+  //     strategyResults.push(0)
+  //     matches.push(array[i].homeTeam, array[i].awayTeam)
+  //   }
+// }
   }
-
-  if((aveSecondHalfHomeGoals > 0.99 && aveSecondHalfHomeGoals < 3.01) && ( aveSecondHalfAwayGoals < 2) && (firstHalfGoals < 4) && (last4homeGoals >1.49 && last4AwayGoals >1.99)&&( halfTimeScore === "1-0" || halfTimeScore === "2-0"|| halfTimeScore === "3-0")) {
-    matchSelection = true
-    if(matchSelection === true && secondHalfGoals > 0 ) {
-      strategyResults.push(1)
-      matches.push(array[i].homeTeam, array[i].awayTeam)
-    }
-    if((matchSelection === true) && (secondHalfGoals === 0)) {
-      strategyResults.push(0)
-      matches.push(array[i].homeTeam, array[i].awayTeam)
-    }
-    
-  }
-
  
   
   
@@ -349,7 +616,7 @@ if ((array[j].awayTeam === array[i].awayTeam) && (array[j].awayFormation === arr
   
 
 
-}
+
 console.log(last4homeGoals);
 
 
@@ -359,6 +626,20 @@ let newStrategyResults = strategyResults.reduce((a, b) => a + b, 0)
 console.log(newStrategyResults)
 console.log(newStrategyResults / strategyResults.length)
 
+let firstHalfTest1 = []
+let firstHalfTest2 = []
+
+for (let i = 0; i< matches.length; i += 3) {
+  
+  if ((matches[i] > 0)) {
+    firstHalfTest1.push(matches[i+1] )
+    firstHalfTest2.push(matches[i+2] )
+}
+}
+
+
+console.log(firstHalfTest1.sort());
+console.log(firstHalfTest2.sort());
 
 
   // const handleClickHomePoints = (e) => {
@@ -816,7 +1097,8 @@ console.log(newStrategyResults / strategyResults.length)
     
     avgAwayTotalGoals()
 
-
+  }
+  handleClickAway()
 
     // const handleClickHomeAgainstAwayDefence = (e) => {
     
@@ -928,9 +1210,10 @@ console.log(newStrategyResults / strategyResults.length)
        
         
       }})
+      console.log(avgHomeGoalsFormation);
       
       
-      let avgHomeGoalsFiltered = avgHomeGoalsFormation.filter((el, i) => i < 3)
+      let avgHomeGoalsFiltered = avgHomeGoalsFormation.filter((el, i) => i < 4)
     
     totalAvgHomeGoalsFormation = avgHomeGoalsFiltered.reduce((a, b) => a + b, 0) / avgHomeGoalsFiltered.length
       
@@ -966,72 +1249,72 @@ console.log(newStrategyResults / strategyResults.length)
 
 
 
-  const handleClickHomeformationStrategyAvg = (e) => {
+  // const handleClickHomeformationStrategyAvg = (e) => {
     
-    setUpDatedHomeFormation(homeFormation)   
-    setUpDatedHome(valueHome)  
+  //   setUpDatedHomeFormation(homeFormation)   
+  //   setUpDatedHome(valueHome)  
   
-    const avgHomeTotalGoalsFormationStrategy = () => {
-      let avgHomeGoalsFormationStrategy = []
-      setUpDatedHomeFormation(homeFormation)  
-      setUpDatedHome(valueHome) 
+  //   const avgHomeTotalGoalsFormationStrategy = () => {
+  //     let avgHomeGoalsFormationStrategy = []
+  //     setUpDatedHomeFormation(homeFormation)  
+  //     setUpDatedHome(valueHome) 
       
-      leagueName.map(match =>  {
+  //     leagueName.map(match =>  {
       
-      if (homeFormation === match.homeFormation && valueHome === match.homeTeam) {
-        match.totalGoals > 1 ?  avgHomeGoalsFormationStrategy.push(1) : avgHomeGoalsFormationStrategy.push(0)
+  //     if (homeFormation === match.homeFormation && valueHome === match.homeTeam) {
+  //       match.totalGoals > 1 ?  avgHomeGoalsFormationStrategy.push(1) : avgHomeGoalsFormationStrategy.push(0)
        
         
-      }})
+  //     }})
      
       
       
-      let avgHomeGoalsFiltered = avgHomeGoalsFormationStrategy.filter((el, i) => i < 5)
+  //     let avgHomeGoalsFiltered = avgHomeGoalsFormationStrategy.filter((el, i) => i < 5)
   
-    let totalAvgHomeGoalsFormationStrategy = avgHomeGoalsFiltered.reduce((a, b) => a + b, 0) / avgHomeGoalsFiltered.length
+  //   let totalAvgHomeGoalsFormationStrategy = avgHomeGoalsFiltered.reduce((a, b) => a + b, 0) / avgHomeGoalsFiltered.length
       
 
-     setTotalAvgHomeGoalsFormationStrategy(totalAvgHomeGoalsFormationStrategy)
+  //    setTotalAvgHomeGoalsFormationStrategy(totalAvgHomeGoalsFormationStrategy)
   
-    }
-    avgHomeTotalGoalsFormationStrategy()
-  }
+  //   }
+  //   avgHomeTotalGoalsFormationStrategy()
+  // }
   
-  handleClickHomeformationStrategyAvg()
+  // handleClickHomeformationStrategyAvg()
 
 
-  const handleClickAwayformationStrategyAvg = (e) => {
+  // const handleClickAwayformationStrategyAvg = (e) => {
     
-    setUpDatedAwayFormation(awayFormation)   
-    setUpDatedAway(valueAway)  
+  //   setUpDatedAwayFormation(awayFormation)   
+  //   setUpDatedAway(valueAway)  
   
-    const avgAwayTotalGoalsFormationStrategy = () => {
-      let avgAwayGoalsFormationStrategy = []
-      setUpDatedAwayFormation(awayFormation)   
-    setUpDatedAway(valueAway)
+  //   const avgAwayTotalGoalsFormationStrategy = () => {
+  //     let avgAwayGoalsFormationStrategy = []
+  //     setUpDatedAwayFormation(awayFormation)   
+  //   setUpDatedAway(valueAway)
       
-    leagueName.map(match =>  {
+  //   leagueName.map(match =>  {
       
-      if (awayFormation === match.awayFormation && valueAway === match.awayTeam ) {
-        match.totalGoals > 1 ? avgAwayGoalsFormationStrategy.push(1) : avgAwayGoalsFormationStrategy.push(0)
+  //     if (awayFormation === match.awayFormation && valueAway === match.awayTeam ) {
+  //       match.totalGoals > 1 ? avgAwayGoalsFormationStrategy.push(1) : avgAwayGoalsFormationStrategy.push(0)
        
         
-      }})
+  //     }})
     
-      avgAwayGoalsFormationStrategy.reverse()
+  //     avgAwayGoalsFormationStrategy.reverse()
       
-      let avgAwayGoalsFiltered = avgAwayGoalsFormationStrategy.filter((el, i) => i < 5)
+  //     let avgAwayGoalsFiltered = avgAwayGoalsFormationStrategy.filter((el, i) => i < 7)
     
-    let totalAvgAwayGoalsFormationStrategy = avgAwayGoalsFiltered.reduce((a, b) => a + b, 0) / avgAwayGoalsFiltered.length
+  //   let totalAvgAwayGoalsFormationStrategy = avgAwayGoalsFiltered.reduce((a, b) => a + b, 0) / avgAwayGoalsFiltered.length
       
      
-     setTotalAvgAwayGoalsFormationStrategy(totalAvgAwayGoalsFormationStrategy)
+  //    setTotalAvgAwayGoalsFormationStrategy(totalAvgAwayGoalsFormationStrategy)
   
-    }
-    avgAwayTotalGoalsFormationStrategy()
-  }
+  //   }
+  //   avgAwayTotalGoalsFormationStrategy()
+  // }
   
-  handleClickAwayformationStrategyAvg()
+  // handleClickAwayformationStrategyAvg()
 
 
 
@@ -1198,8 +1481,7 @@ console.log(newStrategyResults / strategyResults.length)
   
   
     
-  }
-  handleClickAway()
+  
 
 //   const handleClickExactHomeFormation = () => {
 
@@ -1267,7 +1549,7 @@ console.log(newStrategyResults / strategyResults.length)
      
     }})
     
-    let avgAwayGoalsFiltered = avgAwayGoalsFormation.filter((el, i) => i < 3)
+    let avgAwayGoalsFiltered = avgAwayGoalsFormation.filter((el, i) => i < 4)
  
     
 
@@ -1287,62 +1569,62 @@ console.log(newStrategyResults / strategyResults.length)
 
 
 
-  const handleClickHomeBtts = (e) => {
+  // const handleClickHomeBtts = (e) => {
   
-    setUpDatedHomeFormation(homeFormation)
+  //   setUpDatedHomeFormation(homeFormation)
   
-    const exactHomeFormationTotalBtts = () => {
-      let avgHomeBtts = []
+  //   const exactHomeFormationTotalBtts = () => {
+  //     let avgHomeBtts = []
       
       
-      leagueName.map(match =>  {
+  //     leagueName.map(match =>  {
     
-        if (homeFormation === match.homeFormation && awayFormation === match.awayFormation && valueHome === match.homeTeam) {
-          avgHomeBtts.push(match.btts)
+  //       if (homeFormation === match.homeFormation && awayFormation === match.awayFormation && valueHome === match.homeTeam) {
+  //         avgHomeBtts.push(match.btts)
          
           
        
-      const totalFormationBttsHome = avgHomeBtts.reduce((a, b) => a + b, 0) / avgHomeBtts.length
+  //     const totalFormationBttsHome = avgHomeBtts.reduce((a, b) => a + b, 0) / avgHomeBtts.length
    
-       setTotalFormationBttsHome(totalFormationBttsHome)
-    }})
-      }
-      exactHomeFormationTotalBtts()
+  //      setTotalFormationBttsHome(totalFormationBttsHome)
+  //   }})
+  //     }
+  //     exactHomeFormationTotalBtts()
     
   
     
-  }
-  handleClickHomeBtts()
+  // }
+  // handleClickHomeBtts()
 
 
 
-  const handleClickAwayBtts = (e) => {
+  // const handleClickAwayBtts = (e) => {
   
-    setUpDatedAwayFormation(awayFormation)
+  //   setUpDatedAwayFormation(awayFormation)
   
-    const exactAwayFormationTotalBtts = () => {
-      let avgAwayBtts = []
+  //   const exactAwayFormationTotalBtts = () => {
+  //     let avgAwayBtts = []
       
       
-      leagueName.map(match =>  {
+  //     leagueName.map(match =>  {
     
-        if (awayFormation === match.awayFormation && homeFormation === match.homeFormation && valueAway === match.awayTeam) {
-          avgAwayBtts.push(match.btts)
+  //       if (awayFormation === match.awayFormation && homeFormation === match.homeFormation && valueAway === match.awayTeam) {
+  //         avgAwayBtts.push(match.btts)
          
           
        
-      const totalFormationBttsAway = avgAwayBtts.reduce((a, b) => a + b, 0) / avgAwayBtts.length
+  //     const totalFormationBttsAway = avgAwayBtts.reduce((a, b) => a + b, 0) / avgAwayBtts.length
         
      
-       setTotalFormationBttsAway(totalFormationBttsAway)
-    }})
-      }
-      exactAwayFormationTotalBtts()
+  //      setTotalFormationBttsAway(totalFormationBttsAway)
+  //   }})
+  //     }
+  //     exactAwayFormationTotalBtts()
     
   
     
-  }
-  handleClickAwayBtts()
+  // }
+  // handleClickAwayBtts()
   
  
 
@@ -1352,84 +1634,84 @@ console.log(newStrategyResults / strategyResults.length)
 
 
 
-  const handleClickHomeSecondHalfGoalPercentage = (e) => {
+  // const handleClickHomeSecondHalfGoalPercentage = (e) => {
   
-    setUpDatedHome(valueHome) 
-    setUpDatedHomeFormation(homeFormation)  
+  //   setUpDatedHome(valueHome) 
+  //   setUpDatedHomeFormation(homeFormation)  
   
-    const homeFormationSecondHalfGoalPercentage = () => {
-      let avgHomeSecondHalfGoalPercentage = []
-      setUpDatedHome(valueHome) 
-    setUpDatedHomeFormation(homeFormation)  
+  //   const homeFormationSecondHalfGoalPercentage = () => {
+  //     let avgHomeSecondHalfGoalPercentage = []
+  //     setUpDatedHome(valueHome) 
+  //   setUpDatedHomeFormation(homeFormation)  
       
-    leagueName.map(match =>  {
+  //   leagueName.map(match =>  {
     
-        if (homeFormation === match.homeFormation&& valueHome === match.homeTeam ) {
+  //       if (homeFormation === match.homeFormation&& valueHome === match.homeTeam ) {
           
-          match.secondHalfGoals > 0 ?  avgHomeSecondHalfGoalPercentage.push(1) : avgHomeSecondHalfGoalPercentage.push(0) 
-        }
+  //         match.secondHalfGoals > 0 ?  avgHomeSecondHalfGoalPercentage.push(1) : avgHomeSecondHalfGoalPercentage.push(0) 
+  //       }
 
          
          
-        })
+  //       })
       
         
      
-    let avgHomeSecondHalfGoalsPercentageFiltered = avgHomeSecondHalfGoalPercentage.filter((el, i) => i < 5)
+  //   let avgHomeSecondHalfGoalsPercentageFiltered = avgHomeSecondHalfGoalPercentage.filter((el, i) => i < 5)
     
        
-      const totalSecondHalfGoalsPercentageHome = avgHomeSecondHalfGoalsPercentageFiltered.reduce((a, b) => a + b, 0) / avgHomeSecondHalfGoalsPercentageFiltered.length
+  //     const totalSecondHalfGoalsPercentageHome = avgHomeSecondHalfGoalsPercentageFiltered.reduce((a, b) => a + b, 0) / avgHomeSecondHalfGoalsPercentageFiltered.length
         
     
-       setTotalSecondHalfGoalsPercentageHome(totalSecondHalfGoalsPercentageHome)
+  //      setTotalSecondHalfGoalsPercentageHome(totalSecondHalfGoalsPercentageHome)
     
-      }
-      homeFormationSecondHalfGoalPercentage()
+  //     }
+  //     homeFormationSecondHalfGoalPercentage()
     
   
     
-  }
-  handleClickHomeSecondHalfGoalPercentage()
+  // }
+  // handleClickHomeSecondHalfGoalPercentage()
 
 
 
-  const handleClickAwaySecondHalfGoalPercentage = (e) => {
+  // const handleClickAwaySecondHalfGoalPercentage = (e) => {
   
-    setUpDatedAway(valueAway) 
-    setUpDatedAwayFormation(awayFormation)  
+  //   setUpDatedAway(valueAway) 
+  //   setUpDatedAwayFormation(awayFormation)  
   
-    const AwayFormationSecondHalfGoalPercentage = () => {
-      let avgAwaySecondHalfGoalPercentage = []
-      setUpDatedAway(valueAway) 
-    setUpDatedAwayFormation(awayFormation) 
+  //   const AwayFormationSecondHalfGoalPercentage = () => {
+  //     let avgAwaySecondHalfGoalPercentage = []
+  //     setUpDatedAway(valueAway) 
+  //   setUpDatedAwayFormation(awayFormation) 
       
-    leagueName.map(match =>  {
+  //   leagueName.map(match =>  {
     
-        if (awayFormation === match.awayFormation && valueAway === match.awayTeam) {
+  //       if (awayFormation === match.awayFormation && valueAway === match.awayTeam) {
           
-          match.secondHalfGoals > 0 ?  avgAwaySecondHalfGoalPercentage.push(1) : avgAwaySecondHalfGoalPercentage.push(0) 
-        }
+  //         match.secondHalfGoals > 0 ?  avgAwaySecondHalfGoalPercentage.push(1) : avgAwaySecondHalfGoalPercentage.push(0) 
+  //       }
 
       
          
-        })
+  //       })
         
     
-    let avgAwaySecondHalfGoalsPercentageFiltered = avgAwaySecondHalfGoalPercentage.filter((el, i) => i < 5)
+  //   let avgAwaySecondHalfGoalsPercentageFiltered = avgAwaySecondHalfGoalPercentage.filter((el, i) => i < 5)
     
        
-      const totalSecondHalfGoalsPercentageAway = avgAwaySecondHalfGoalsPercentageFiltered.reduce((a, b) => a + b, 0) / avgAwaySecondHalfGoalsPercentageFiltered.length
+  //     const totalSecondHalfGoalsPercentageAway = avgAwaySecondHalfGoalsPercentageFiltered.reduce((a, b) => a + b, 0) / avgAwaySecondHalfGoalsPercentageFiltered.length
         
       
-       setTotalSecondHalfGoalsPercentageAway(totalSecondHalfGoalsPercentageAway)
+  //      setTotalSecondHalfGoalsPercentageAway(totalSecondHalfGoalsPercentageAway)
     
-      }
-      AwayFormationSecondHalfGoalPercentage()
+  //     }
+  //     AwayFormationSecondHalfGoalPercentage()
     
   
     
-  }
-  handleClickAwaySecondHalfGoalPercentage()
+  // }
+  // handleClickAwaySecondHalfGoalPercentage()
 
 
 
@@ -1537,7 +1819,7 @@ console.log(newStrategyResults / strategyResults.length)
     }})
 
     
-      let avgHomeGoalsFiltered = avgSecondHalfGoal.filter((el, i) => i < 5)
+      let avgHomeGoalsFiltered = avgSecondHalfGoal.filter((el, i) => i <4)
    
 
     const totalFormationSecondHalfGoalsHome = avgHomeGoalsFiltered.reduce((a, b) => a + b, 0) / avgHomeGoalsFiltered.length
@@ -1574,7 +1856,7 @@ console.log(newStrategyResults / strategyResults.length)
         }})
 
       
-      let avgAwayGoalsFiltered = avgAwaySecondHalfGoals.filter((el, i) => i < 5)
+      let avgAwayGoalsFiltered = avgAwaySecondHalfGoals.filter((el, i) => i < 4)
     
 
       const totalFormationSecondHalfGoalsAway = avgAwayGoalsFiltered.reduce((a, b) => a + b, 0) / avgAwayGoalsFiltered.length
@@ -1744,27 +2026,30 @@ console.log(newStrategyResults / strategyResults.length)
         <h2>{upDatedHome}</h2>
         <h2>{upDatedAway}</h2>
       </div>
-      <div className={styles.totalAverage} >
+      {/* <div className={styles.totalAverage} >
       TOTAL POINTS = {totalPoints}
       </div>
       <div className={styles.totalAverage} >
       TOTAL POINTS FORMATION= {totalPointsFormation}
-      </div>
-      <div className={styles.totalAverage} >
+      </div> */}
+      {/* <div className={styles.totalAverage} >
       {totalAvgHomeGoals} Total Average goals {totalAvgAwayGoals}
+      </div> */}
+      <div className={styles.totalAverageFormation} >
+      {totalAvgHomeGoalsFormation} Total Formation goals {totalAvgAwayGoalsFormation}
       </div>
       <div className={styles.totalAverageFormation} >
-      {totalAvgHomeGoalsFormation} Total Average Formation goals {totalAvgAwayGoalsFormation}
+      {(totalAvgHomeGoalsFormation + totalAvgAwayGoalsFormation)/2} Total Average Formation goals {(totalAvgHomeGoalsFormation + totalAvgAwayGoalsFormation)/2}
       </div>
-      <div className={styles.totalAverageFormation} >
+      {/* <div className={styles.totalAverageFormation} >
       {totalAvgHomeGoalsFormationStrategy} Total percentage of stategy wins {totalAvgAwayGoalsFormationStrategy}
-      </div>
+      </div> */}
       {/* <div className={styles.totalAverageFormation} >
       {homeFormationLeagueAvg} Total Formation league Ave {awayFormationLeagueAvg}
       </div> */}
-      <div className={styles.totalAverageFormation} >
+      {/* <div className={styles.totalAverageFormation} >
       {exactFormationTotalGoalsHome} Total Average exact formation goals {exactFormationTotalGoalsAway}
-      </div> 
+      </div>  */}
        {/* <div className={styles.totalAverageFormation} >
       {totalHomeAvgAgainstAwayDefence} Total Average Against opp Defence {totalAwayAvgAgainstHomeDefence}
       </div> */}
@@ -1781,18 +2066,18 @@ console.log(newStrategyResults / strategyResults.length)
       <div className={styles.totalAverageFormation} >
       {aveGoalConcedeAgainstOppFormationHome} Total Average conceded against opp formation {aveGoalScoredAgainstOppFormationAway}
       </div> */}
-      <div className={styles.totalAverageFormation} >
+      {/* <div className={styles.totalAverageFormation} >
       {totalFormationBttsHome} Total Average btts {totalFormationBttsAway}
-      </div>
+      </div> */}
       {/* <div className={styles.totalAverageFormation} >
       {totalFormationFistHalfGoalsHome} Total Average 1st Half Goals {totalFormationFistHalfGoalsAway}
       </div> */}
       <div className={styles.totalAverageFormation} >
       {totalFormationSecondHalfGoalsHome} Total Average 2nd Half Goals {totalFormationSecondHalfGoalsAway}
       </div>
-      <div className={styles.totalAverageFormation} >
+      {/* <div className={styles.totalAverageFormation} >
       {totalSecondHalfGoalsPercentageHome} Total Average 2nd Half Goals % {totalSecondHalfGoalsPercentageAway}
-      </div>
+      </div> */}
       {/* <div className={styles.totalAverageFormation} >
       {home442Ave} 442 {away442Ave}
       </div>

@@ -1,5 +1,110 @@
 export const ScottishChampionship = [
   {
+    homeTeam: 'Partick Thistle',
+    awayTeam: 'Ayr',
+    homeGoals: 3,
+    awayGoals: 2,
+    totalGoals: 5,
+    homeHalfTimeGoals: 2,
+    awayHalfTimeGoals: 1,
+    halfTimeGoals: 3,
+    secondHalfGoals: 2,
+    homeFormation: '433',
+    awayFormation: '442',
+    firstGoalTime: 0,
+    btts: 1
+  },
+  {
+    homeTeam: 'Raith',
+    awayTeam: 'Arbroath',
+    homeGoals: 1,
+    awayGoals: 1,
+    totalGoals: 2,
+    homeHalfTimeGoals: 1,
+    awayHalfTimeGoals: 1,
+    halfTimeGoals: 2,
+    secondHalfGoals: 0,
+    homeFormation: '451',
+    awayFormation: '433',
+    firstGoalTime: 0,
+    btts: 1
+  },
+  {
+    homeTeam: 'Arbroath',
+    awayTeam: 'Morton',
+    homeGoals: 1,
+    awayGoals: 1,
+    totalGoals: 2,
+    homeHalfTimeGoals: 0,
+    awayHalfTimeGoals: 1,
+    halfTimeGoals: 1,
+    secondHalfGoals: 1,
+    homeFormation: '442',
+    awayFormation: '4231',
+    firstGoalTime: 0,
+    btts: 1
+  },
+  {
+    homeTeam: 'Ayr',
+    awayTeam: 'Raith',
+    homeGoals: 2,
+    awayGoals: 0,
+    totalGoals: 2,
+    homeHalfTimeGoals: 1,
+    awayHalfTimeGoals: 0,
+    halfTimeGoals: 1,
+    secondHalfGoals: 1,
+    homeFormation: '442',
+    awayFormation: '4231',
+    firstGoalTime: 0,
+    btts: 0
+  },
+  {
+    homeTeam: 'Cove Rangers',
+    awayTeam: 'Partick Thistle',
+    homeGoals: 1,
+    awayGoals: 1,
+    totalGoals: 2,
+    homeHalfTimeGoals: 1,
+    awayHalfTimeGoals: 0,
+    halfTimeGoals: 1,
+    secondHalfGoals: 1,
+    homeFormation: '442',
+    awayFormation: '433',
+    firstGoalTime: 0,
+    btts: 1
+  },
+  {
+    homeTeam: 'Inverness',
+    awayTeam: 'Dundee FC',
+    homeGoals: 0,
+    awayGoals: 1,
+    totalGoals: 1,
+    homeHalfTimeGoals: 0,
+    awayHalfTimeGoals: 1,
+    halfTimeGoals: 1,
+    secondHalfGoals: 0,
+    homeFormation: '442',
+    awayFormation: '433',
+    firstGoalTime: 0,
+    btts: 0
+  },
+  {
+    homeTeam: "Queen's Park",
+    awayTeam: 'Hamilton',
+    homeGoals: 4,
+    awayGoals: 0,
+    totalGoals: 4,
+    homeHalfTimeGoals: 4,
+    awayHalfTimeGoals: 0,
+    halfTimeGoals: 4,
+    secondHalfGoals: 0,
+    homeFormation: '4231',
+    awayFormation: '4231',
+    firstGoalTime: 0,
+    btts: 0
+  },
+  {
     homeTeam: 'Cove Rangers',
     awayTeam: 'Morton',
     homeGoals: 1,
@@ -9,7 +114,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 1
   },
@@ -23,7 +128,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '451',
     awayFormation: '4231',
     btts: 0
   },
@@ -37,8 +142,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -51,8 +156,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -80,7 +185,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 1,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -93,8 +198,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -107,7 +212,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '352',
     awayFormation: '4231',
     btts: 0
   },
@@ -122,7 +227,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 1,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -136,7 +241,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 1,
     secondHalfGoals: 4,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -149,7 +254,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 1
   },
@@ -163,8 +268,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -177,8 +282,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -192,7 +297,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 2,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -205,7 +310,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 0
   },
@@ -219,8 +324,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '451',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -234,7 +339,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 3,
     secondHalfGoals: 5,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -248,7 +353,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 3,
     secondHalfGoals: 0,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -262,7 +367,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 3,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -276,7 +381,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 1,
     secondHalfGoals: 3,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -289,8 +394,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 3,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -303,8 +408,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -317,8 +422,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 3,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -331,7 +436,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 0
   },
@@ -345,7 +450,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 1
   },
@@ -360,7 +465,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 1,
     secondHalfGoals: 3,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -373,7 +478,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '451',
     awayFormation: '4231',
     btts: 0
   },
@@ -387,8 +492,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -401,8 +506,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '451',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -415,8 +520,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -429,7 +534,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 1
   },
@@ -458,7 +563,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 1,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -471,8 +576,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -485,7 +590,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 3,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 0
   },
@@ -500,7 +605,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 3,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -513,8 +618,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '451',
+    awayFormation: '451',
     btts: 0
   },
   {
@@ -527,7 +632,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 0
   },
@@ -541,7 +646,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '451',
     awayFormation: '4231',
     btts: 1
   },
@@ -555,7 +660,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 1
   },
@@ -569,8 +674,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -583,8 +688,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '451',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -597,8 +702,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -625,7 +730,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 0
   },
@@ -639,7 +744,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 3,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -653,8 +758,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -668,7 +773,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 2,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -682,7 +787,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 1,
     secondHalfGoals: 3,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -696,7 +801,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 2,
     secondHalfGoals: 3,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -709,7 +814,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 0
   },
@@ -723,8 +828,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '451',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -738,7 +843,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 2,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -752,7 +857,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 1,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -779,8 +884,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -794,7 +899,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 0,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '451',
     btts: 0
   },
   {
@@ -821,8 +926,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -835,8 +940,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -849,8 +954,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -863,8 +968,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -877,7 +982,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 0
   },
@@ -891,8 +996,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '451',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -906,7 +1011,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 2,
     secondHalfGoals: 3,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -919,8 +1024,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -933,8 +1038,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '451',
     btts: 1
   },
   {
@@ -947,8 +1052,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 4,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -962,7 +1067,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 0,
     secondHalfGoals: 3,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '451',
     btts: 1
   },
   {
@@ -975,8 +1080,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 5,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -989,8 +1094,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -1004,7 +1109,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 0,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '451',
     btts: 0
   },
   {
@@ -1017,8 +1122,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -1031,8 +1136,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -1046,7 +1151,7 @@ export const ScottishChampionship = [
     halfTimeGoals: 2,
     secondHalfGoals: 3,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -1059,8 +1164,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -1073,8 +1178,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '451',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -1087,8 +1192,8 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 2,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1101,7 +1206,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '343',
     awayFormation: '4231',
     btts: 1
   },
@@ -1115,7 +1220,7 @@ export const ScottishChampionship = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 1
   }

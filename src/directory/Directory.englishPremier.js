@@ -10,7 +10,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -37,8 +37,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -51,8 +51,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '343',
     btts: 0
   },
   {
@@ -65,8 +65,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -79,8 +79,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 4,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '532',
     btts: 1
   },
   {
@@ -93,8 +93,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -107,7 +107,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 3,
     secondHalfGoals: 4,
-    homeFormation: '4231',
+    homeFormation: '343',
     awayFormation: '4231',
     btts: 1
   },
@@ -122,7 +122,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '451',
     btts: 0
   },
   {
@@ -135,8 +135,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -149,8 +149,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -178,7 +178,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 4,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -206,7 +206,7 @@ export const EnglishPremier = [
     halfTimeGoals: 0,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -219,8 +219,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '451',
     btts: 0
   },
   {
@@ -234,7 +234,7 @@ export const EnglishPremier = [
     halfTimeGoals: 3,
     secondHalfGoals: 4,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -247,7 +247,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -261,8 +261,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -275,7 +275,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 4,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -303,8 +303,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 4,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -317,7 +317,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 1
   },
@@ -345,8 +345,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 4,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -359,7 +359,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -374,7 +374,7 @@ export const EnglishPremier = [
     halfTimeGoals: 3,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -388,7 +388,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 0,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -401,7 +401,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 3,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 0
   },
@@ -415,8 +415,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -443,8 +443,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -458,7 +458,7 @@ export const EnglishPremier = [
     halfTimeGoals: 3,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '352',
     btts: 0
   },
   {
@@ -500,7 +500,7 @@ export const EnglishPremier = [
     halfTimeGoals: 2,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '451',
     btts: 0
   },
   {
@@ -513,7 +513,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '343',
     awayFormation: '4231',
     btts: 1
   },
@@ -528,7 +528,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '451',
     btts: 0
   },
   {
@@ -541,8 +541,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -555,8 +555,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -569,7 +569,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '451',
     awayFormation: '4231',
     btts: 0
   },
@@ -584,7 +584,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -598,7 +598,7 @@ export const EnglishPremier = [
     halfTimeGoals: 0,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '352',
     btts: 0
   },
   {
@@ -611,8 +611,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -625,8 +625,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '343',
     btts: 0
   },
   {
@@ -639,8 +639,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -653,8 +653,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -667,7 +667,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -681,8 +681,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -696,7 +696,7 @@ export const EnglishPremier = [
     halfTimeGoals: 0,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '343',
     btts: 0
   },
   {
@@ -709,8 +709,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '343',
     btts: 0
   },
   {
@@ -738,7 +738,7 @@ export const EnglishPremier = [
     halfTimeGoals: 0,
     secondHalfGoals: 0,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -751,8 +751,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -765,8 +765,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '532',
     btts: 0
   },
   {
@@ -794,7 +794,7 @@ export const EnglishPremier = [
     halfTimeGoals: 0,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -807,8 +807,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '451',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -821,8 +821,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -835,8 +835,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -849,7 +849,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 3,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -877,7 +877,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -905,8 +905,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '352',
     btts: 0
   },
   {
@@ -919,8 +919,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '451',
     btts: 1
   },
   {
@@ -947,7 +947,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 0
   },
@@ -961,8 +961,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 4,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -975,7 +975,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 3,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '451',
     awayFormation: '4231',
     btts: 0
   },
@@ -990,7 +990,7 @@ export const EnglishPremier = [
     halfTimeGoals: 0,
     secondHalfGoals: 0,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -1003,7 +1003,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 4,
     secondHalfGoals: 5,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -1018,7 +1018,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '343',
     btts: 0
   },
   {
@@ -1031,8 +1031,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -1045,8 +1045,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -1060,7 +1060,7 @@ export const EnglishPremier = [
     halfTimeGoals: 3,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1073,8 +1073,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 3,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -1087,8 +1087,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1102,7 +1102,7 @@ export const EnglishPremier = [
     halfTimeGoals: 2,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -1115,7 +1115,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 0
   },
@@ -1129,7 +1129,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '352',
     awayFormation: '4231',
     btts: 0
   },
@@ -1143,8 +1143,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 4,
     secondHalfGoals: 4,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '451',
     btts: 1
   },
   {
@@ -1157,7 +1157,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -1171,8 +1171,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -1185,7 +1185,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 0
   },
@@ -1199,7 +1199,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 4,
-    homeFormation: '4231',
+    homeFormation: '352',
     awayFormation: '4231',
     btts: 1
   },
@@ -1227,8 +1227,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 4,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -1241,8 +1241,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1255,7 +1255,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 3,
     secondHalfGoals: 4,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -1269,7 +1269,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 3,
-    homeFormation: '4231',
+    homeFormation: '352',
     awayFormation: '4231',
     btts: 1
   },
@@ -1283,8 +1283,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -1297,7 +1297,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 3,
-    homeFormation: '4231',
+    homeFormation: '343',
     awayFormation: '4231',
     btts: 1
   },
@@ -1311,7 +1311,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '343',
     awayFormation: '4231',
     btts: 1
   },
@@ -1325,7 +1325,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 0
   },
@@ -1339,8 +1339,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -1353,7 +1353,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '451',
     awayFormation: '4231',
     btts: 0
   },
@@ -1367,8 +1367,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1382,7 +1382,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -1396,7 +1396,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1409,8 +1409,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -1423,8 +1423,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 3,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '532',
     btts: 0
   },
   {
@@ -1438,7 +1438,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1452,7 +1452,7 @@ export const EnglishPremier = [
     halfTimeGoals: 3,
     secondHalfGoals: 0,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1465,8 +1465,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '451',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1480,7 +1480,7 @@ export const EnglishPremier = [
     halfTimeGoals: 0,
     secondHalfGoals: 3,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -1493,8 +1493,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '343',
     btts: 0
   },
   {
@@ -1507,8 +1507,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '352',
     btts: 0
   },
   {
@@ -1521,8 +1521,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1549,8 +1549,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -1563,7 +1563,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 0
   },
@@ -1577,8 +1577,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '451',
     btts: 1
   },
   {
@@ -1591,8 +1591,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 5,
     secondHalfGoals: 4,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '343',
     btts: 0
   },
   {
@@ -1606,7 +1606,7 @@ export const EnglishPremier = [
     halfTimeGoals: 2,
     secondHalfGoals: 4,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '541',
     btts: 1
   },
   {
@@ -1634,7 +1634,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1647,8 +1647,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 3,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1662,7 +1662,7 @@ export const EnglishPremier = [
     halfTimeGoals: 2,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '352',
     btts: 0
   },
   {
@@ -1676,7 +1676,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '343',
     btts: 0
   },
   {
@@ -1689,7 +1689,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '352',
     awayFormation: '4231',
     btts: 0
   },
@@ -1703,8 +1703,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1717,8 +1717,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -1732,7 +1732,7 @@ export const EnglishPremier = [
     halfTimeGoals: 3,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1745,7 +1745,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 3,
-    homeFormation: '4231',
+    homeFormation: '451',
     awayFormation: '4231',
     btts: 1
   },
@@ -1759,8 +1759,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '352',
     btts: 0
   },
   {
@@ -1773,8 +1773,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '541',
     btts: 1
   },
   {
@@ -1787,8 +1787,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -1801,7 +1801,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '352',
     awayFormation: '4231',
     btts: 0
   },
@@ -1815,7 +1815,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 4,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '532',
     awayFormation: '4231',
     btts: 0
   },
@@ -1830,7 +1830,7 @@ export const EnglishPremier = [
     halfTimeGoals: 2,
     secondHalfGoals: 4,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -1843,8 +1843,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -1858,7 +1858,7 @@ export const EnglishPremier = [
     halfTimeGoals: 3,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '343',
     btts: 0
   },
   {
@@ -1871,7 +1871,7 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 4,
-    homeFormation: '4231',
+    homeFormation: '343',
     awayFormation: '4231',
     btts: 1
   },
@@ -1899,8 +1899,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -1914,7 +1914,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -1927,8 +1927,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1941,8 +1941,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -1955,8 +1955,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '541',
+    awayFormation: '343',
     btts: 0
   },
   {
@@ -1969,8 +1969,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -1997,8 +1997,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '532',
     btts: 0
   },
   {
@@ -2011,8 +2011,8 @@ export const EnglishPremier = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 3,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '532',
     btts: 1
   },
   {
@@ -2026,7 +2026,7 @@ export const EnglishPremier = [
     halfTimeGoals: 1,
     secondHalfGoals: 3,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {

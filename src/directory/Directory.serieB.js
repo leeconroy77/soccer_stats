@@ -1,5 +1,19 @@
 export const SerieB = [
   {
+    homeTeam: 'Palermo',
+    awayTeam: 'Como',
+    homeGoals: 0,
+    awayGoals: 0,
+    totalGoals: 0,
+    homeHalfTimeGoals: 0,
+    awayHalfTimeGoals: 0,
+    halfTimeGoals: 0,
+    secondHalfGoals: 0,
+    homeFormation: '442',
+    awayFormation: '442',
+    firstGoalTime: 0,
+    btts: 0
+  },{
     homeTeam: 'Pisa',
     awayTeam: 'Ascoli',
     homeGoals: 2,

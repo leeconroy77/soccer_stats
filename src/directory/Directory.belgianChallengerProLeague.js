@@ -1,4 +1,229 @@
-export const SpanishLaLiga2 = [
+export const BelgianChallengerProLeague = [
+  {
+    homeTeam: 'Anderlecht U23',
+    awayTeam: 'RWDM 47',
+    homeGoals: 1,
+    awayGoals: 2,
+    totalGoals: 3,
+    homeHalfTimeGoals: 0,
+    awayHalfTimeGoals: 0,
+    halfTimeGoals: 0,
+    secondHalfGoals: 3,
+    homeFormation: '433',
+    awayFormation: '343',
+    firstGoalTime: 0,
+    btts: 1
+  },
+  {
+    homeTeam: 'St. Liege U23',
+    awayTeam: 'Lommel SK',
+    homeGoals: 0,
+    awayGoals: 3,
+    totalGoals: 3,
+    homeHalfTimeGoals: 0,
+    awayHalfTimeGoals: 1,
+    halfTimeGoals: 1,
+    secondHalfGoals: 2,
+    homeFormation: '433',
+    awayFormation: '433',
+    firstGoalTime: 0,
+    btts: 0
+  },
+  {
+    homeTeam: 'Virton',
+    awayTeam: 'Beveren',
+    homeGoals: 0,
+    awayGoals: 0,
+    totalGoals: 0,
+    homeHalfTimeGoals: 0,
+    awayHalfTimeGoals: 0,
+    halfTimeGoals: 0,
+    secondHalfGoals: 0,
+    homeFormation: '352',
+    awayFormation: '352',
+    firstGoalTime: 0,
+    btts: 0
+  },
+  {
+    homeTeam: 'Lommel SK',
+    awayTeam: 'Deinze',
+    homeGoals: 1,
+    awayGoals: 0,
+    totalGoals: 1,
+    homeHalfTimeGoals: 0,
+    awayHalfTimeGoals: 0,
+    halfTimeGoals: 0,
+    secondHalfGoals: 1,
+    homeFormation: '433',
+    awayFormation: '4231',
+    firstGoalTime: 0,
+    btts: 0
+  },
+  {
+    homeTeam: 'Beerschot VA',
+    awayTeam: 'St. Liege U23',
+    homeGoals: 1,
+    awayGoals: 0,
+    totalGoals: 1,
+    homeHalfTimeGoals: 1,
+    awayHalfTimeGoals: 0,
+    halfTimeGoals: 1,
+    secondHalfGoals: 0,
+    homeFormation: '442',
+    awayFormation: '433',
+    firstGoalTime: 0,
+    btts: 0
+  },
+  {
+    homeTeam: 'RWDM 47',
+    awayTeam: 'Virton',
+    homeGoals: 3,
+    awayGoals: 1,
+    totalGoals: 4,
+    homeHalfTimeGoals: 2,
+    awayHalfTimeGoals: 1,
+    halfTimeGoals: 3,
+    secondHalfGoals: 1,
+    homeFormation: '352',
+    awayFormation: '352',
+    firstGoalTime: 0,
+    btts: 1
+  },
+  {
+    homeTeam: 'Lierse K.',
+    awayTeam: 'Dender',
+    homeGoals: 2,
+    awayGoals: 1,
+    totalGoals: 3,
+    homeHalfTimeGoals: 2,
+    awayHalfTimeGoals: 0,
+    halfTimeGoals: 2,
+    secondHalfGoals: 1,
+    homeFormation: '352',
+    awayFormation: '532',
+    firstGoalTime: 0,
+    btts: 1
+  },
+  {
+    homeTeam: 'Beveren',
+    awayTeam: 'Anderlecht U23',
+    homeGoals: 4,
+    awayGoals: 1,
+    totalGoals: 5,
+    homeHalfTimeGoals: 2,
+    awayHalfTimeGoals: 0,
+    halfTimeGoals: 2,
+    secondHalfGoals: 3,
+    homeFormation: '352',
+    awayFormation: '433',
+    firstGoalTime: 0,
+    btts: 1
+  },
+  {
+    homeTeam: 'Genk U23',
+    awayTeam: 'Club Brugge U23',
+    homeGoals: 1,
+    awayGoals: 2,
+    totalGoals: 3,
+    homeHalfTimeGoals: 1,
+    awayHalfTimeGoals: 2,
+    halfTimeGoals: 3,
+    secondHalfGoals: 0,
+    homeFormation: '4231',
+    awayFormation: '442',
+    firstGoalTime: 0,
+    btts: 1
+  },
+  {
+    homeTeam: 'Deinze',
+    awayTeam: 'Beveren',
+    homeGoals: 1,
+    awayGoals: 4,
+    totalGoals: 5,
+    homeHalfTimeGoals: 0,
+    awayHalfTimeGoals: 1,
+    halfTimeGoals: 1,
+    secondHalfGoals: 4,
+    homeFormation: '4231',
+    awayFormation: '352',
+    firstGoalTime: 0,
+    btts: 1
+  },
+  {
+    homeTeam: 'Dender',
+    awayTeam: 'Beerschot VA',
+    homeGoals: 2,
+    awayGoals: 3,
+    totalGoals: 5,
+    homeHalfTimeGoals: 0,
+    awayHalfTimeGoals: 2,
+    halfTimeGoals: 2,
+    secondHalfGoals: 3,
+    homeFormation: '343',
+    awayFormation: '343',
+    firstGoalTime: 0,
+    btts: 1
+  },
+  {
+    homeTeam: 'RWDM 47',
+    awayTeam: 'Club Brugge U23',
+    homeGoals: 0,
+    awayGoals: 2,
+    totalGoals: 2,
+    homeHalfTimeGoals: 0,
+    awayHalfTimeGoals: 1,
+    halfTimeGoals: 1,
+    secondHalfGoals: 1,
+    homeFormation: '532',
+    awayFormation: '532',
+    firstGoalTime: 0,
+    btts: 0
+  },
+  {
+    homeTeam: 'Virton',
+    awayTeam: 'Lommel SK',
+    homeGoals: 0,
+    awayGoals: 1,
+    totalGoals: 1,
+    homeHalfTimeGoals: 0,
+    awayHalfTimeGoals: 0,
+    halfTimeGoals: 0,
+    secondHalfGoals: 1,
+    homeFormation: '541',
+    awayFormation: '433',
+    firstGoalTime: 0,
+    btts: 0
+  },
+  {
+    homeTeam: 'Anderlecht U23',
+    awayTeam: 'Genk U23',
+    homeGoals: 2,
+    awayGoals: 0,
+    totalGoals: 2,
+    homeHalfTimeGoals: 2,
+    awayHalfTimeGoals: 0,
+    halfTimeGoals: 2,
+    secondHalfGoals: 0,
+    homeFormation: '451',
+    awayFormation: '4231',
+    firstGoalTime: 0,
+    btts: 0
+  },
+  {
+    homeTeam: 'St. Liege U23',
+    awayTeam: 'Lierse K.',
+    homeGoals: 2,
+    awayGoals: 4,
+    totalGoals: 6,
+    homeHalfTimeGoals: 1,
+    awayHalfTimeGoals: 3,
+    halfTimeGoals: 4,
+    secondHalfGoals: 2,
+    homeFormation: '433',
+    awayFormation: '4231',
+    firstGoalTime: 0,
+    btts: 1
+  },
   {
     homeTeam: 'Lierse K.',
     awayTeam: 'Virton',
@@ -9,8 +234,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '532',
     btts: 1
   },
   {
@@ -23,8 +248,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 3,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -37,8 +262,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -51,8 +276,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -66,7 +291,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 3,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -80,7 +305,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 1,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -93,7 +318,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '532',
     awayFormation: '4231',
     btts: 1
   },
@@ -121,8 +346,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -135,8 +360,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -149,7 +374,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -163,8 +388,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -177,8 +402,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '532',
     btts: 0
   },
   {
@@ -191,8 +416,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 5,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -205,8 +430,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '541',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -220,7 +445,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 0,
     secondHalfGoals: 0,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -247,8 +472,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '443',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -261,7 +486,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 3,
     secondHalfGoals: 3,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 1
   },
@@ -275,8 +500,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -289,7 +514,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '352',
     awayFormation: '4231',
     btts: 0
   },
@@ -303,7 +528,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 0
   },
@@ -317,8 +542,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -331,8 +556,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '532',
     btts: 0
   },
   {
@@ -345,7 +570,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '343',
     awayFormation: '4231',
     btts: 0
   },
@@ -359,7 +584,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 0
   },
@@ -373,8 +598,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -387,8 +612,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 3,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -401,7 +626,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 3,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -415,8 +640,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '532',
     btts: 1
   },
   {
@@ -430,7 +655,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 4,
     secondHalfGoals: 0,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -443,8 +668,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '532',
     btts: 1
   },
   {
@@ -457,8 +682,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '343',
     btts: 0
   },
   {
@@ -472,7 +697,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 1,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -485,7 +710,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 0
   },
@@ -499,8 +724,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -513,8 +738,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -527,8 +752,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -541,8 +766,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 2,
     secondHalfGoals: 5,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -555,8 +780,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -569,8 +794,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -584,7 +809,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 1,
     secondHalfGoals: 4,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -597,7 +822,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 3,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 1
   },
@@ -612,7 +837,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 2,
     secondHalfGoals: 0,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -625,8 +850,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -639,8 +864,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -653,8 +878,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 4,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '532',
     btts: 1
   },
   {
@@ -667,8 +892,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 2,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '532',
     btts: 0
   },
   {
@@ -681,8 +906,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -695,8 +920,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -709,7 +934,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '532',
     awayFormation: '4231',
     btts: 0
   },
@@ -723,8 +948,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -737,8 +962,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '352',
     btts: 0
   },
   {
@@ -751,8 +976,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 4,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -765,8 +990,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -780,7 +1005,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 1,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -793,8 +1018,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -807,7 +1032,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 1
   },
@@ -822,7 +1047,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 1,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '352',
     btts: 0
   },
   {
@@ -836,7 +1061,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 3,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -863,7 +1088,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 0
   },
@@ -878,7 +1103,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 2,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -891,8 +1116,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -905,8 +1130,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -919,7 +1144,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 3,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '343',
     awayFormation: '4231',
     btts: 1
   },
@@ -933,7 +1158,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 1,
-    homeFormation: '4231',
+    homeFormation: '442',
     awayFormation: '4231',
     btts: 0
   },
@@ -948,7 +1173,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 1,
     secondHalfGoals: 1,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -975,8 +1200,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -989,8 +1214,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 1,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '541',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -1003,8 +1228,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 2,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1017,8 +1242,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1031,8 +1256,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -1046,7 +1271,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 0,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1059,8 +1284,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1073,8 +1298,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '532',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -1101,8 +1326,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 3,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '352',
     btts: 1
   },
   {
@@ -1116,7 +1341,7 @@ export const SpanishLaLiga2 = [
     halfTimeGoals: 0,
     secondHalfGoals: 2,
     homeFormation: '4231',
-    awayFormation: '4231',
+    awayFormation: '352',
     btts: 0
   },
   {
@@ -1129,8 +1354,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '433',
     btts: 0
   },
   {
@@ -1143,8 +1368,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 3,
     secondHalfGoals: 1,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '442',
     btts: 1
   },
   {
@@ -1171,8 +1396,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '343',
     btts: 1
   },
   {
@@ -1185,8 +1410,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '343',
+    awayFormation: '442',
     btts: 0
   },
   {
@@ -1199,8 +1424,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 1,
     halfTimeGoals: 2,
     secondHalfGoals: 3,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '433',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1213,8 +1438,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 4,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '433',
     btts: 1
   },
   {
@@ -1227,8 +1452,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 1,
     secondHalfGoals: 0,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '352',
+    awayFormation: '352',
     btts: 0
   },
   {
@@ -1241,7 +1466,7 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 2,
     halfTimeGoals: 3,
     secondHalfGoals: 2,
-    homeFormation: '4231',
+    homeFormation: '433',
     awayFormation: '4231',
     btts: 1
   },
@@ -1255,8 +1480,8 @@ export const SpanishLaLiga2 = [
     awayHalfTimeGoals: 0,
     halfTimeGoals: 0,
     secondHalfGoals: 2,
-    homeFormation: '4231',
-    awayFormation: '4231',
+    homeFormation: '442',
+    awayFormation: '343',
     btts: 1
   }
 
